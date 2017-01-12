@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <cn.com.zte.emeeting.app.views.TopBar
+        android:id="@+id/topbar_helpme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D7D7D7" >
+    </cn.com.zte.emeeting.app.views.TopBar>
+
+    <RelativeLayout
+        android:id="@+id/rel_help_reserve"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/topbar_btn_image" >
+
+        <TextView
+            android:id="@+id/tv_help_reserve"
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:text="@string/tv_help_reserve"
+            android:textColor="@color/SFContentTextColor" />
+
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ico_g_right" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/SFViewBgColor" />
+
+    <RelativeLayout
+        android:id="@+id/rel_help_shake"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/topbar_btn_image" >
+
+        <TextView
+            android:id="@+id/tv_help_shake"
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:text="@string/tv_help_shake"
+            android:textColor="@color/SFContentTextColor" />
+
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ico_g_right" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/SFViewBgColor" />
+
+    <RelativeLayout
+        android:id="@+id/rel_help_phone"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/topbar_btn_image" >
+
+        <TextView
+            android:id="@+id/tv_help_phone"
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:text="@string/tv_help_phone"
+            android:textColor="@color/SFContentTextColor" />
+
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ico_g_right" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/SFViewBgColor" />
+
+    <RelativeLayout
+        android:id="@+id/rel_help_add"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/topbar_btn_image" >
+
+        <TextView
+            android:id="@+id/tv_help_add"
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="50dp"
+            android:text="@string/tv_help_add"
+            android:textColor="@color/SFContentTextColor" />
+
+        <TextView
+            android:layout_width="8dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/ico_g_right" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_4"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/SFBbtnViewBgColor" />
+
+</LinearLayout>

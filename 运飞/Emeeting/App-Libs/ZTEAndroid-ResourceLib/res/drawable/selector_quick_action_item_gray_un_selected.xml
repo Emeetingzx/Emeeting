@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:dither="true">
+   
+   <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/quick_action_item_bg_selected" />
+
+            <corners android:bottomLeftRadius="@dimen/common_dp_20" 
+                     android:bottomRightRadius="@dimen/common_dp_20" 
+                     android:topLeftRadius="@dimen/common_dp_20" 
+                     android:topRightRadius="@dimen/common_dp_20" />
+
+            <stroke android:width="@dimen/common_dp_1" 
+                    android:color="@color/quick_action_item_bg_selected" />
+        </shape>
+   </item>
+   
+  <item android:state_pressed="false">
+        <shape>
+            <solid android:color="@color/common_text_gray_un_active" />
+
+            <corners android:bottomLeftRadius="@dimen/common_dp_20" 
+                     android:bottomRightRadius="@dimen/common_dp_20" 
+                     android:topLeftRadius="@dimen/common_dp_20" 
+                     android:topRightRadius="@dimen/common_dp_20" />
+
+            <stroke android:width="@dimen/common_dp_1" 
+                    android:color="@color/common_text_gray_un_active" />
+        </shape>
+   </item>
+        
+        
+    <item>
+        <shape>
+            <solid android:color="@color/common_text_gray_un_active" />
+
+            <corners android:bottomLeftRadius="@dimen/common_dp_20" 
+                     android:bottomRightRadius="@dimen/common_dp_20" 
+                     android:topLeftRadius="@dimen/common_dp_20" 
+                     android:topRightRadius="@dimen/common_dp_20" />
+
+            <stroke android:width="@dimen/common_dp_1" 
+                    android:color="@color/common_text_gray_un_active" />
+        </shape>
+    </item>
+
+</selector>
+
+

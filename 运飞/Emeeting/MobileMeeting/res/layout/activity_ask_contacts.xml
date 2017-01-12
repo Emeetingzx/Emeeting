@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ControlBgColor" >
+
+    <cn.com.zte.emeeting.app.views.TopBar
+        android:id="@+id/topbar_contactlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D7D7D7" >
+    </cn.com.zte.emeeting.app.views.TopBar>
+
+    <ListView
+        android:id="@+id/lv_contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="5dp"
+        android:scrollbars="@null" >
+    </ListView>
+
+</LinearLayout>

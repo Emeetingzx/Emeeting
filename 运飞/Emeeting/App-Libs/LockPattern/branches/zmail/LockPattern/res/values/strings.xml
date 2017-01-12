@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">图案解锁</string>
+    <string name="lockscreen_access_pattern_start">"开始绘制图案"</string>
+    <string name="lockscreen_access_pattern_cleared">"图案已清除"</string>
+    <string name="lockscreen_access_pattern_cell_added">"已添加单元格"</string>
+    <string name="lockscreen_access_pattern_detected">"图案绘制完成"</string>
+    <string name="lockpattern_retry_button_text">"重试"</string>
+    <string name="lockpattern_continue_button_text">"继续"</string>
+    <string name="lockpattern_confirm_button_text">"确认"</string>
+    <string name="lockpattern_recording_intro_header">"绘制解锁图案"</string>
+    <string name="lockpattern_settings_help_how_to_record">"如何绘制解锁图案"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"最少连接4个点，请重新输入"</string>
+    <string name="lockpattern_pattern_entered_header">"图案已记录"</string>
+    <string name="lockpattern_need_to_confirm">"再次绘制解锁图案"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"与上次绘制不一致，请重新绘制"</string>
+    <string name="lockpattern_pattern_confirmed_header">"确认保存新解锁图案"</string>
+    <string name="lockpattern_recording_inprogress">"完成后松开手指"</string>
+    <string name="gesture_password_guide_text">你可以创建一个解锁图案，这样他人在借用你的手机时，将无法打开应用。</string>
+    <string name="gesture_password_guide_creat_btn">设置手势密码</string>
+    <string name="forght_gesture_password">忘记手势密码?</string>
+    <string name="other_gesture">用其他账号登录</string>
+    <string name="gesture_reset">重新设置手势</string>
+    
+    <string name="gesture_password">手势密码</string>
+
+    <string name="md_head_image_contact_name_default_value">无</string>
+    <string name="please_lockscreen_access_pattern">请绘制手势密码</string>
+    <string name="need_relogin">5次失败后，需要重新登录 </string>
+    
+    <string name="confirm_log_off_the_current_account">确认注销当前账号?</string>
+    <string name="dialog_comfirm">确认</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="forght_gesture_password_need_to_re_sign">\n忘记手势密码,需重新登录\n</string>
+    <string name="log_in_again">重新登录</string>  
+    <string name="seconds_retry"> 秒后重试</string>
+    <string name="wrong_password_you_can_enter_again">密码错误，还可以再次输入</string>
+    <string name="secondary">次</string>
+    <string name="please_enter_your_old_password">请输入旧密码</string>
+    <string name="turned_gestures_password">已开启手势密码，请不要重复设置</string>
+    <string name="gesture_not_set_a_password">没有设置手势密码，请先设置</string>
+    <string name="unopened_gesture_password">未开启手势密码，请先开启</string>
+</resources>

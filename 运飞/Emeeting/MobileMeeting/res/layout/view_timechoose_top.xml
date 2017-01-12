@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/timechoose_notime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+            
+            <ImageView 
+                android:visibility="gone"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:id="@+id/timechoose_notime_image"
+                android:src="@drawable/icon_notime_unselect"
+                />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                style="@style/TextSizeStyle_14"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:background="@color/bgcolor_filter_yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/timechoose_notime"
+                android:textColor="@color/white" />
+            <!-- android:textColor="@color/SFContentTextColor" -->
+            
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/timechoose_timelayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+            <cn.com.zte.emeeting.app.views.TimeDoubleIntChooseView 
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:id="@+id/timechooseview"
+                ></cn.com.zte.emeeting.app.views.TimeDoubleIntChooseView>
+            <View 
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/timechooseview"
+                android:layout_above="@id/timechooseview"
+                android:layout_width="fill_parent"
+                android:background="#aa000000"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+
+        <!--
+             <Button
+            android:id="@+id/timechoose_conf"
+            android:layout_marginTop="10dp"
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@color/OrangebgColor"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/timechoose_sure"
+            android:textColor="@color/white" />        -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/timechoose_cancle_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/public_background_image" >
+
+                <TextView
+                    android:id="@+id/timechoose_cancle"
+                    style="@style/TextSizeStyle_16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="#CCC"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/timechoose_cancle"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/timechoose_conf_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/public_background_image" >
+
+                <TextView
+                    android:id="@+id/timechoose_conf"
+                    style="@style/TextSizeStyle_16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/OrangebgColor"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="@string/timechoose_sure"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

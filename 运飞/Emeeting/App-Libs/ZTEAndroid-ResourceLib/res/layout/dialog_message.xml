@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/layout_width_220"
+    android:layout_height="@dimen/layout_height_160"
+    android:background="@drawable/bg_dialog_corners"
+    android:minHeight="@dimen/layout_height_160"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/layout_width_220"
+        android:layout_height="@dimen/layout_height_160"
+        android:background="@color/transparent"
+        android:orientation="vertical" >
+
+        <!-- 标题 -->
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/Dialog_Title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_dialog_head_corners"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingTop="@dimen/padding_5"
+            android:text="@string/common_dialog_title_info"
+            android:textSize="@dimen/textsize_18" />
+
+        <!-- 内容 -->
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/layout_height_80"
+            android:layout_marginLeft="@dimen/layout_margin_left"
+            android:layout_marginRight="@dimen/layout_margin_right"
+            android:background="@drawable/bg_dialog_body_repeat"
+            android:paddingTop="@dimen/padding_top_5" >
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left|center_vertical"
+                android:textColor="@color/like_black_color"
+                android:textSize="@dimen/textsize_16" />
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/layout_height_2"
+            android:background="@drawable/bg_line_dotted_gray"
+            android:layerType="software" />
+
+        <!-- 按钮 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingTop="@dimen/padding_5" >
+
+            <Button
+                android:id="@+id/btn_confirm"
+                style="@style/Dialog_Bottom_Button"
+                android:layout_width="@dimen/layout_width_160"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_btn_common_default_normal"
+                android:gravity="center"
+                android:paddingBottom="@dimen/padding_5"
+                android:paddingTop="@dimen/padding_5"
+                android:text="@string/common_confirm"
+                android:textSize="@dimen/textsize_18" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4" >
+    
+    <cn.com.zte.emeeting.app.views.TopBar
+        android:id="@+id/topbar_room_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D7D7D7" >
+    </cn.com.zte.emeeting.app.views.TopBar>
+    
+    <RelativeLayout
+        android:id="@+id/rel_layout"
+    	android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar_room_control"
+        android:layout_marginTop="12dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="#FFFFFF"
+        android:visibility="visible" >
+    
+        <!-- 邀请其他会议室 -->
+	    <RelativeLayout
+	        android:id="@+id/rel_invite_meeting_room"
+	    	android:layout_width="match_parent"
+	        android:layout_height="wrap_content" >
+	        
+	        <ImageView 
+	            android:id="@+id/iv_other_room"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="7dip"
+	            android:src="@drawable/ic_launcher"/>
+	        <TextView 
+	            android:id="@+id/tv_invite_other_room"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dip"
+	            android:layout_marginLeft="7dip"
+	            android:layout_toRightOf="@+id/iv_other_room"
+	            android:text="@string/invite_meeting_room"
+	            android:textSize="20sp"
+	            android:textColor="#818181"/>
+	        
+	        <TextView 
+	            android:id="@+id/input_meeting_port"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="5dip"
+	            android:layout_alignLeft="@+id/tv_invite_other_room"
+	            android:layout_below="@+id/tv_invite_other_room"
+	            android:text="@string/input_meeting_port"
+	            android:textSize="14sp"
+	            android:textColor="#999999"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="2dip"
+	            android:layout_below="@+id/input_meeting_port"
+	            android:background="#F3F3F3" />
+	        
+	    </RelativeLayout>
+	    
+	    <!-- 邀请手机好友 -->
+	    <RelativeLayout
+	        android:id="@+id/rel_invite_phone_friends"
+	    	android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/rel_invite_meeting_room" >
+	        
+	        <ImageView 
+	            android:id="@+id/iv_invite_phone_friends"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="7dip"
+	            android:src="@drawable/ic_launcher"/>
+	        <TextView 
+	            android:id="@+id/tv_invite_phone_friends"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dip"
+	            android:layout_marginLeft="7dip"
+	            android:layout_toRightOf="@+id/iv_invite_phone_friends"
+	            android:text="@string/invite_phone_friends"
+	            android:textSize="20sp"
+	            android:textColor="#818181"/>
+	        
+	        <TextView 
+	            android:id="@+id/input_meeting_port_"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="5dip"
+	            android:layout_alignLeft="@+id/tv_invite_phone_friends"
+	            android:layout_below="@+id/tv_invite_phone_friends"
+	            android:text="@string/input_freind_num"
+	            android:textSize="14sp"
+	            android:textColor="#999999"/>
+	        
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="2dip"
+	            android:layout_below="@+id/input_meeting_port_"
+	            android:background="#F3F3F3" />
+	        
+	    </RelativeLayout>
+	    
+	    <!-- 拨打固定电话 -->
+	    <RelativeLayout
+	        android:id="@+id/rel_dail_contact"
+	    	android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/rel_invite_phone_friends" >
+	        
+	        <ImageView 
+	            android:id="@+id/iv_dail_contact"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerVertical="true"
+	            android:layout_marginLeft="7dip"
+	            android:src="@drawable/ic_launcher"/>
+	        <TextView 
+	            android:id="@+id/tv_dail_contact"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dip"
+	            android:layout_marginLeft="7dip"
+	            android:layout_toRightOf="@+id/iv_dail_contact"
+	            android:text="@string/dail_contact"
+	            android:textSize="20sp"
+	            android:textColor="#818181"/>
+	        
+	        <TextView 
+	            android:id="@+id/input_dail_contact"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginBottom="5dip"
+	            android:layout_alignLeft="@+id/tv_dail_contact"
+	            android:layout_below="@+id/tv_dail_contact"
+	            android:text="@string/support_inner_or_outter_line"
+	            android:textSize="14sp"
+	            android:textColor="#999999"/>
+	    </RelativeLayout>
+    </RelativeLayout>
+    
+    
+    <!-- 输入信息界面 -->
+    <RelativeLayout 
+        android:id="@+id/rel_search_layout"
+    	android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topbar_room_control"
+        android:layout_marginTop="133dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:visibility="gone" >
+	    
+        <LinearLayout 
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText 
+	            android:id="@+id/et_input"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:inputType="phone"
+	            android:background="@drawable/shape_input_text_edittext"
+	            android:layout_weight="3"/>
+	        <TextView 
+	            android:id="@+id/tv_join_meeting"
+	            android:layout_width="0dip"
+	            android:layout_height="wrap_content"
+	            android:gravity="center"
+	            android:layout_weight="1"
+	            android:text="@string/join_meeting"
+	            android:background="@drawable/shape_join_meeting_button"
+	            android:textSize="16sp"
+	            android:textColor="#FFFFFF"/>
+        </LinearLayout>
+        
+        <TextView 
+            android:id="@+id/tv_join_meeting_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dip"
+            android:layout_below="@+id/linear_layout"
+            android:gravity="center_vertical"
+            android:layout_alignLeft="@+id/linear_layout"
+            android:text="@string/join_meeting_tips"
+            android:textSize="12sp"
+            android:textColor="#878787"/>
+        
+        <TextView 
+            android:id="@+id/tv_call_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:singleLine="false"
+            android:layout_below="@+id/tv_join_meeting_tips"
+            android:layout_alignLeft="@+id/linear_layout"
+            android:text="@string/tv_call_tips"
+            android:visibility="gone"
+            android:textSize="12sp"
+            android:textColor="#878787"/>
+        
+    </RelativeLayout>
+    
+    <!-- 底部显示邀请通讯录好友加入 -->
+    <TextView 
+	    android:id="@+id/tv_invite_contact_list"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentBottom="true"
+	    android:gravity="center"
+	    android:text="@string/invite_contact_freinds"
+	    android:background="@drawable/shape_join_meeting_button"
+	    android:textSize="16sp"
+	    android:textColor="#FFFFFF"
+	    android:visibility="gone"/>
+    
+</RelativeLayout>

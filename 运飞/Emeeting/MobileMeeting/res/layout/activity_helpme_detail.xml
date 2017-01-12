@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cn.com.zte.emeeting.app.views.TopBar
+        android:id="@+id/topbar_detail_helpme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D7D7D7" >
+    </cn.com.zte.emeeting.app.views.TopBar>
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/TextSizeStyle_16"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="20dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"
+        android:gravity="center_vertical"
+        android:paddingRight="20dp"
+        android:background="@color/SFViewBgColor"
+        android:text="@string/tv_help_reserve"
+        android:textColor="@color/SFBtitleTvColor" />
+    <TextView
+        android:id="@+id/tv_detail"
+        style="@style/TextSizeStyle_16"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:padding="20dp"
+        android:text="@string/tv_help_reserve_detail"
+        android:textColor="@color/SFContentTextColor" />
+
+</LinearLayout>

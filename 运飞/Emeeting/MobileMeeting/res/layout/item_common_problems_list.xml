@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:id="@+id/common_problems_list_item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+		android:background="@drawable/public_background_image"
+        android:padding="10dp" >
+
+        <TextView
+            android:id="@+id/common_problems_list_item_text"
+            style="@style/TextSizeStyle_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/buy_process_text_str" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/me_more" />
+    </RelativeLayout>
+    
+        <cn.com.zte.emeeting.app.views.DashedLineView 
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/common_problems_list_item_layout"
+        />
+
+</RelativeLayout>

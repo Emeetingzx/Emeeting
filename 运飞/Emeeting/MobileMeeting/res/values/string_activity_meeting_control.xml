@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_meeting_control">会议控制</string>
+    <string name="invite_meeting_room">邀请其他会议室一起视频</string>
+    <string name="input_meeting_port">输入会议终端号，即可参加会议</string>
+    <string name="invite_phone_friends">邀请手机好友加入</string>
+    <string name="input_freind_num">输入好友手机号或邀请通讯录好友</string>
+    <string name="dail_contact">拨打固定电话加入会议</string>
+    <string name="support_inner_or_outter_line">支持公司内线及外线</string>
+    <string name="join_meeting">参加会议</string>
+    <string name="join_meeting_tips">提示</string>
+    <string name="tips_input_meeting_port">提示：输入视频终端号码</string>
+    <string name="tips_input_num">提示：请输入好友手机号码</string>
+    <string name="tips_support_call">提示：(支持工时内线及外线呼叫)</string>
+    <string name="tv_call_tips">国内内线格式：075583333\n国外内线格式：国际区号+城市区号+83333\n国内外线格式：26773333，固话加区号\n国外外线格式：直接输入号码如00852123456789</string>
+    <string name="invite_contact_freinds">邀请通讯录好友加入</string>
+    <string name="no_contactlist">你的好友通讯录为空</string>
+    <string name="string_will_at">将在</string>
+    <string name="string_disconnect">断开</string>
+
+</resources>

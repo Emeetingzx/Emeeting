@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout
+        android:id="@+id/rl_bg_item_gv_meetinfilter"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/bgselector_item_gv_meetingfilter"
+        >
+	    <TextView 
+	        android:layout_height="30dp"
+	        android:layout_width="fill_parent"
+	        android:id="@+id/tv_item_gv_meetinfilter"
+	        android:text="@string/dlg_condition_no_limit"
+	        android:textSize="16sp"
+	        android:gravity="center"
+	        android:textColor="@drawable/textcolor_item_gv_meetingfilter"
+	        />
+    </RelativeLayout>
+</FrameLayout>

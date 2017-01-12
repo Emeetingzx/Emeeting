@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- common -->
+    <string name="enum_common_download_data">下载数据</string>
+    <string name="enum_common_upload_data">上传数据</string>
+    
+    <!-- Login -->
+    <string name="login_get_user_info">登录</string>
+    <string name="login_query_latest_version">获取版本信息</string>
+
+</resources>

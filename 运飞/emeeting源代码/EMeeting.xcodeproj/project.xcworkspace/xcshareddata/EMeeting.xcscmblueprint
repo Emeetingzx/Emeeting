@@ -1,0 +1,25 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "31dea3a8-af9a-7142-9831-6ace1dcf5670++1196",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "31dea3a8-af9a-7142-9831-6ace1dcf5670++1196" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "31dea3a8-af9a-7142-9831-6ace1dcf5670++1196" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CEE94EFB-5740-41C3-8F6A-1F27DF2B9359",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "31dea3a8-af9a-7142-9831-6ace1dcf5670++1196" : "emeeting%E6%BA%90%E4%BB%A3%E7%A0%81\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "EMeeting",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "EMeeting.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "http:\/\/10.30.19.101\/svn\/MEETING100",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "31dea3a8-af9a-7142-9831-6ace1dcf5670++1196"
+    }
+  ]
+}

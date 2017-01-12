@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ptr_pull_to_refresh">下拉更新</string>
+    <string name="ptr_release_to_refresh">开始更新</string>
+    <string name="ptr_refreshing">更新中…</string>
+    <string name="ptr_last_updated">最近更新时间: %1$s</string>
+</resources>

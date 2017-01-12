@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <cn.com.zte.emeeting.app.views.TopBar
+        android:id="@+id/topbar_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D7D7D7" >
+    </cn.com.zte.emeeting.app.views.TopBar>
+
+    <TextView
+        android:id="@+id/tv_logo1"
+        android:layout_width="170dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:background="@drawable/bg_glogo" />
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_logo1"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/TextSizeStyle_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_version_num" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            style="@style/TextSizeStyle_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/lin1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ico_two_dimension_code"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_above="@+id/tv1"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_zte"
+            android:layout_width="70dp"
+            android:layout_height="20dp"
+            android:background="@drawable/bg_g_zte"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/TextSizeStyle_12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="@string/tv_copyright"
+        android:textColor="@color/SFBtvTextColor" />
+
+</RelativeLayout>

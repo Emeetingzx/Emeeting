@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+    
+    <Button 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/TransparencyColor"
+        />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        >
+
+	    <cn.com.zte.emeeting.app.views.TopBar
+	        android:id="@+id/valueadd_fragment_topbar"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp" >
+	    </cn.com.zte.emeeting.app.views.TopBar>
+
+	    <LinearLayout
+	        android:id="@+id/ll_text_title"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp"
+	        android:background="@color/bgcolor_meetingdetail_top"
+	        android:orientation="horizontal" >
+	
+	        <RelativeLayout
+		        android:id="@+id/rl_service_choosebar_left"
+		        android:layout_height="fill_parent"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:orientation="vertical"
+		        android:background="@drawable/bgselector_viewpage_choosebar"
+		        >
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:text="@string/service_book"
+		            android:textSize="@dimen/textsize_meeting_default"
+		            android:layout_centerInParent="true"
+		            android:textColor="@drawable/textcolor_choosebar"
+		            />
+		        <ImageView
+		            android:id="@+id/im_valueadd_booking"
+		            android:layout_alignParentBottom="true"
+		            android:layout_height="2dp"
+		            android:layout_width="fill_parent"
+		            android:src="@drawable/bgshape_viewpager_bar_blue"
+		            android:layout_centerHorizontal="true"
+		            />
+		    </RelativeLayout>
+	
+	        <RelativeLayout
+		        android:id="@+id/rl_service_choosebar_right"
+		        android:layout_height="fill_parent"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:orientation="vertical"
+		        android:background="@drawable/bgselector_viewpage_choosebar"
+		        >
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:text="@string/service_myservice"
+		            android:textSize="@dimen/textsize_meeting_default"
+		            android:layout_centerInParent="true"
+		            android:textColor="@drawable/textcolor_choosebar"
+		            />
+		        <ImageView
+		            android:id="@+id/im_valueadd_myself"
+		            android:layout_alignParentBottom="true"
+		            android:layout_height="2dp"
+		            android:layout_width="fill_parent"
+		            android:src="@drawable/bgshape_viewpager_bar_blue"
+		            android:layout_centerHorizontal="true"
+		            android:textColor="@drawable/textcolor_choosebar"
+		            />
+		    </RelativeLayout>
+	        
+	    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_service"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+</LinearLayout>
+</RelativeLayout>

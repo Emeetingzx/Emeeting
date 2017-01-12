@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map linked="true" >
+    <!-- ####################   APK版本更新服务器配置       ####################  -->
+    <!-- APK版本更新服务器是否采用Https协议 false | true  -->
+    <entry key="update_server_server_https_flag" >false</entry>
+    
+    <!-- APK版本更新服务器外网IP(生产环境)  -->
+     <entry key="update_server_server_ip_outer" >mdm.zte.com.cn</entry>
+    <!-- APK版本更新服务器内网IP(生产环境)  -->
+     <entry key="update_server_server_ip_inner" >mdm.zte.com.cn</entry>
+    <!-- APK版本更新服务器外网端口(生产环境)  -->
+     <entry key="update_server_server_port_outer" >80</entry>
+    <!--  APK版本更新服务器内网端口(生产环境)  -->
+     <entry key="update_server_server_port_inner" >80</entry>
+    
+    <!-- APK版本更新服务器外网IP(测试环境)  -->
+   <!-- <entry key="update_server_server_ip_outer" >mdmtest.zte.com.cn</entry>-->
+    <!-- APK版本更新服务器内网IP(测试环境)  -->
+    <!--<entry key="update_server_server_ip_inner" >mdmtest.zte.com.cn</entry>-->
+    <!-- APK版本更新服务器外网端口(测试环境)  -->
+    <!--<entry key="update_server_server_port_outer" >8888</entry>-->
+    <!-- APK版本更新服务器内网端口(测试环境)  -->
+    <!--<entry key="update_server_server_port_inner" >8888</entry>-->
+    
+</map>

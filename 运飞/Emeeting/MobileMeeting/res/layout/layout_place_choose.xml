@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    <cn.com.zte.emeeting.app.views.TopBar 
+        android:layout_height="48dp"
+        android:layout_width="fill_parent"
+        android:id="@+id/topbar_dlg_placechoose"
+        ></cn.com.zte.emeeting.app.views.TopBar>
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        >
+    
+	    <ListView
+	        android:id="@+id/lv_chooseplace_level_first"
+	        android:layout_height="fill_parent"
+	        android:layout_width="80dp"
+	        android:dividerHeight="0dp"
+	        android:divider="#0000"
+	        android:background="@color/bgcolor_filter_left"
+	        ></ListView>
+	    <ListView
+	        android:id="@+id/lv_chooseplace_level_second"
+	        android:layout_height="fill_parent"
+	        android:layout_width="130dp"
+	        android:dividerHeight="0dp"
+	        android:divider="#0000"
+	        android:background="@color/bgcolor_filter_center"
+	        android:listSelector="@drawable/bgselector_dlg_chooseplace_nochange"
+	        ></ListView>
+	    
+	    <ListView
+	        android:id="@+id/lv_chooseplace_level_third"
+	        android:layout_height="fill_parent"
+	        android:layout_width="fill_parent"
+	        android:dividerHeight="0dp"
+	        android:divider="#0000"
+	        android:background="@color/white"
+	        android:listSelector="@drawable/bgselector_dlg_chooseplace_nochange"
+	        ></ListView>
+	
+	    </LinearLayout>
+</LinearLayout>

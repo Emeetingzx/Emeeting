@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+    <ImageView
+        android:id="@+id/iv_item_mbf_meetinglv_projector"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:src="@drawable/bgselector_meetingitem_img_projector"
+        />
+    <ImageView
+        android:id="@+id/iv_item_mbf_meetinglv_tv"
+        android:layout_marginLeft="18dp"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:src="@drawable/bgselector_meetingitem_img_tv"
+        />
+    <ImageView
+        android:id="@+id/iv_item_mbf_meetinglv_phone"
+        android:layout_marginLeft="18dp"
+        android:layout_height="20dp"
+        android:layout_width="20dp"
+        android:src="@drawable/bgselector_meetingitem_img_phone"
+        />
+
+</LinearLayout>

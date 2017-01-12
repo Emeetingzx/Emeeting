@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tv_et_meeting_name">会议名称</string>
+    <string name="tv_tv_meeting_type">会议类型</string>
+    <string name="tv_meeting_date">起止时间</string>
+    <string name="tv_join_leader">参会领导</string>
+    <string name="tv_meeting_level">会议级别</string>
+    <string name="tv_meeting_title">会议主题</string>
+    
+    <string name="tv_save_num">接入号码</string>
+    <string name="tv_meeting_num">会议编号</string>
+    <string name="tv_organizer">组织者</string>
+    <string name="tv_push">退订</string>
+    
+    <string name="tv_join_meeting_num">参会方数</string>
+    <string name="tv_join_meeting_join_num">接入编号</string>
+    <string name="tv_join_meeting_pwd">会议密码</string>
+    <string name="tv_reserve">预订</string>
+    <string name="tv_cancel">取消</string>
+    
+    
+     <string name="tv_please_input_meeting_name">请输入会议名称</string>
+     <string name="tv_please_phone">电话会议桥</string>
+      <string name="tv_other">其他</string>
+       <string name="tv_c_level">C级</string>
+       
+       <string name="tv_only_number">仅支持数字</string>
+        <string name="tv_choose_edit">选填项,仅支持最多6位数字</string>
+        <string name="tv_only_six_number">仅支持最多6位数字</string>
+</resources>

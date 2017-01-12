@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+
+    <!-- 版本升级主背景色 -->
+    <color name="app_update_bg_main">#FFFFFF</color>
+
+    <!-- 版本升级标题区域字体颜色色 -->
+    <color name="app_update_title_text">#333333</color>
+
+    <!-- 版本升级内容区域字体颜色色 -->
+    <color name="app_update_content_text">#777777</color>
+
+    <!-- 版本升级操作菜单区域背景色 -->
+    <color name="app_update_foot_menu_bg_main">#e7e7e7</color>
+
+    <!-- 版本升级操作菜单区域分割线色 -->
+    <color name="app_update_foot_split_line">#b8b8b8</color>
+
+    <!-- 版本升级操作菜单区域菜单-升级文本颜色 -->
+    <color name="app_update_foot_menu_confirm_text_color">#00c37c</color>
+    <!-- 版本升级操作菜单区域菜单-取消升级文本颜色 -->
+    <color name="app_update_foot_menu_cancel_text_color">#333333</color>
+    <!-- 版本升级操作菜单区域菜单-取消升级|取消升级点击之后的文本颜色 -->
+    <color name="app_update_foot_menu_active_text_color">#FFFFFF</color>
+
+</resources>

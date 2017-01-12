@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#0000"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+	<View
+	    android:layout_height="1dp"
+	    android:layout_width="fill_parent"
+	    android:background="#ccc"
+	    />
+	
+	<LinearLayout 
+	    android:id="@+id/rl_dlg_choose_floor_bg"
+	    android:paddingTop="20dp"
+	    android:layout_height="wrap_content"
+	    android:layout_width="fill_parent"
+	    android:orientation="vertical"
+	    >
+		<GridView
+		    android:id="@+id/gv_dlg_choose_floor"
+		    android:layout_above="@+id/btn_choosefloor_ok"
+		    android:layout_height="wrap_content"
+		    android:layout_width="fill_parent"
+		    android:numColumns="3"
+		    android:listSelector="@drawable/bgselector_item_gv_citychoose"
+		    android:verticalSpacing="2dp"
+		    android:horizontalSpacing="2dp"
+		    ></GridView>
+		<Button
+		    android:id="@+id/btn_choosefloor_ok"
+		    android:layout_height="36dp"
+		    android:layout_width="fill_parent"
+		    android:layout_margin="20dp"
+		    android:text="@string/public_ok"
+		    />
+	</LinearLayout>
+</LinearLayout>

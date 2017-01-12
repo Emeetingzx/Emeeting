@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000" >
+
+    <cn.com.zte.emeeting.app.views.BaseListView
+        android:id="@+id/base_listview_layout_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null"
+        android:drawSelectorOnTop="false"
+        android:dividerHeight="0dp"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollingCache="false" >
+    </cn.com.zte.emeeting.app.views.BaseListView>
+
+</RelativeLayout>

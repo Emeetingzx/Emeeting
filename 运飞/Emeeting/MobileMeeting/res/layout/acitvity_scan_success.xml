@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.com.zte.emeeting.app.views.TopBar
+        android:id="@+id/scan_success_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black" >
+    </cn.com.zte.emeeting.app.views.TopBar>
+
+    <RelativeLayout
+        android:id="@+id/sign_rell"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                >
+                <ImageView
+                    android:id="@+id/iv_checkedResultImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    />
+
+                <TextView
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/scan_success_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_centerInParent="true"
+                    />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:gravity="center_horizontal"
+                android:textSize="18sp"
+                android:textColor="@color/textcolor_gray_6"
+                android:id="@+id/scan_success_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView 
+        android:id="@+id/iv_meetingNotStart"
+        android:layout_width="120dp"
+        android:layout_height="150dp"
+        android:src="@drawable/icon_not_started"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+    </RelativeLayout>
+</LinearLayout>

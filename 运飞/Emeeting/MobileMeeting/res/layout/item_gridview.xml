@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:orientation="vertical" >
+    <TextView
+        android:id="@+id/btn_click"
+        style="@style/TextSizeStyle_16"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/bg_shake_but"
+        android:gravity="center"
+        android:text="@string/dlg_place_RD_building_tmp"
+        android:textColor="@color/PVFContentTextColor" />
+
+</LinearLayout>

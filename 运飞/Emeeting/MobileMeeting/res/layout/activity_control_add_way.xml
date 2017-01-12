@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ControlBgColor"
+    android:orientation="vertical" >
+
+    <cn.com.zte.emeeting.app.views.TopBar
+        android:id="@+id/topbar_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D7D7D7" >
+    </cn.com.zte.emeeting.app.views.TopBar>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="75dp"
+        android:background="@color/white"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/cw_btn_Join"
+            android:layout_width="75dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="#ff9600"
+            android:text="@string/AMJoinMeeting"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/cw_et_input"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_toLeftOf="@id/cw_btn_Join"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:inputType="number"
+            android:textColor="@color/ControlTvTitleColor"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/AM_RelativeLayout_Video"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/cw_iv_oneView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ico_ask_meeting_room" />
+
+            <TextView
+                android:id="@+id/cw_tv_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/cw_iv_oneView"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/cw_iv_oneView"
+                android:text="@string/AMVideoTitle"
+                android:textColor="@color/ControlTvTitleColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cw_tv_video"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/cw_iv_oneView"
+                android:text="@string/AMVideoContent"
+                android:textColor="@color/ControlTvConColor"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/ControlLineColor" />
+
+        <RelativeLayout
+            android:id="@+id/AM_RelativeLayout_Phone"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/cw_iv_twoView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ioc_interior_wiring" />
+
+            <TextView
+                android:id="@+id/cw_tv_cellphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/cw_iv_twoView"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/cw_iv_twoView"
+                android:text="@string/AMInside"
+                android:textColor="@color/ControlTvTitleColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cw_tv_cellphone"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/cw_iv_twoView"
+                android:text="@string/AMInsideInfoDetidl"
+                android:textColor="@color/ControlTvConColor"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/ControlLineColor" />
+
+        <RelativeLayout
+            android:id="@+id/AM_RelativeLayout_TelePhone"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp" >
+
+            <ImageView
+                android:id="@+id/cw_iv_threeView"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ioc_outer_wiring" />
+
+            <TextView
+                android:id="@+id/cw_tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/cw_iv_threeView"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/cw_iv_threeView"
+                android:text="@string/AMouter"
+                android:textColor="@color/ControlTvTitleColor"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cw_tv_phone"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="9dp"
+                android:layout_toRightOf="@id/cw_iv_threeView"
+                android:text="@string/AMouterInfoDetidl"
+                android:textColor="@color/ControlTvConColor"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.6dp"
+            android:background="@color/ControlLineColor" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="@color/white" />
+    </LinearLayout>
+
+</LinearLayout>

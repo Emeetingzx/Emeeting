@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    	        
+	        <!-- 投影仪,电视,电话 -->
+	       <TextView 
+	           android:layout_height="48dp"
+	           android:layout_width="fill_parent"
+	           android:text="@string/public_projector"
+	           android:paddingLeft="15dp"
+	           android:textSize="16sp"
+	           android:textColor="@color/textcolor_gray_6"	           
+	           android:gravity="center_vertical"
+	           />
+	       <cn.com.zte.emeeting.app.views.SigleSelectionLayout 
+	           android:id="@+id/single_layout_projector"
+	           android:layout_height="32dp"
+	           android:layout_width="fill_parent"
+	           android:layout_marginLeft="14dp"
+	           android:layout_marginRight="14dp"
+	           ></cn.com.zte.emeeting.app.views.SigleSelectionLayout>
+	       <TextView 
+	           android:layout_height="48dp"
+	           android:layout_width="fill_parent"
+	           android:text="@string/public_tv"
+	           android:paddingLeft="15dp"
+	           android:textSize="16sp"
+	           android:textColor="@color/textcolor_gray_6"
+	           android:gravity="center_vertical"
+	           />
+	       <cn.com.zte.emeeting.app.views.SigleSelectionLayout 
+	           android:id="@+id/single_layout_tv"
+	           android:layout_height="32dp"
+	           android:layout_width="fill_parent"
+	           android:layout_marginLeft="14dp"
+	           android:layout_marginRight="14dp"
+	           ></cn.com.zte.emeeting.app.views.SigleSelectionLayout>
+	       <TextView 
+	           android:textSize="16sp"
+	           android:layout_height="48dp"
+	           android:layout_width="fill_parent"
+	           android:text="@string/public_phone"
+	           android:paddingLeft="15dp"
+	           android:textColor="@color/textcolor_gray_6"
+	           android:gravity="center_vertical"
+	           />
+	       <cn.com.zte.emeeting.app.views.SigleSelectionLayout 
+	           android:id="@+id/single_layout_phone"
+	           android:layout_height="32dp"
+	           android:layout_width="fill_parent"
+	           android:layout_marginLeft="14dp"
+	           android:layout_marginRight="14dp"
+	           ></cn.com.zte.emeeting.app.views.SigleSelectionLayout>
+
+</LinearLayout>

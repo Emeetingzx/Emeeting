@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="KGk-i7-Jjw" customClass="SubAreaTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="130" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="130" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="region_selection_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="X9y-Wf-h0t">
+                        <rect key="frame" x="116" y="14" width="14" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="XbP-Ge-ots"/>
+                            <constraint firstAttribute="width" constant="14" id="mkO-IL-v2V"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auo-k9-8Z3">
+                        <rect key="frame" x="5" y="0.0" width="106" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Auo-k9-8Z3" secondAttribute="bottom" id="1XF-xw-Zpy"/>
+                    <constraint firstItem="X9y-Wf-h0t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="9Kl-bD-3cQ"/>
+                    <constraint firstItem="Auo-k9-8Z3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="T5H-oJ-453"/>
+                    <constraint firstItem="X9y-Wf-h0t" firstAttribute="leading" secondItem="Auo-k9-8Z3" secondAttribute="trailing" constant="5" id="dQW-jw-xbG"/>
+                    <constraint firstAttribute="trailing" secondItem="X9y-Wf-h0t" secondAttribute="trailing" id="grg-Ev-ZSV"/>
+                    <constraint firstItem="Auo-k9-8Z3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qhp-nt-UdH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="selectImageView" destination="X9y-Wf-h0t" id="6uf-6A-yiY"/>
+                <outlet property="subAreaLabel" destination="Auo-k9-8Z3" id="CDF-Ij-i8s"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="region_selection_background.png" width="21" height="24"/>
+    </resources>
+</document>

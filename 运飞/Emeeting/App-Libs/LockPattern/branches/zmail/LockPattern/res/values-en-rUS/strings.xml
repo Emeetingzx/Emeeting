@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="app_name">Unlock pattern</string>
+    <string name="lockscreen_access_pattern_start">"Start drawing pattern"</string>
+    <string name="lockscreen_access_pattern_cleared">"Pattern cleared"</string>
+    <string name="lockscreen_access_pattern_cell_added">"Added cell"</string>
+    <string name="lockscreen_access_pattern_detected">"Pattern drawing finished"</string>
+    <string name="lockpattern_retry_button_text">"Retry"</string>
+    <string name="lockpattern_continue_button_text">"Carry on"</string>
+    <string name="lockpattern_confirm_button_text">"OK"</string>
+    <string name="lockpattern_recording_intro_header">"Draw pattern to unlock"</string>
+    <string name="lockpattern_settings_help_how_to_record">"How to draw an unlock pattern"</string>
+    <string name="lockpattern_recording_incorrect_too_short">"At least four connection points, please re-enter."</string>
+    <string name="lockpattern_pattern_entered_header">"Pattern recorded"</string>
+    <string name="lockpattern_need_to_confirm">"Once again draw your unlock pattern"</string>
+    <string name="lockpattern_need_to_unlock_wrong">"Inconsistent with the last draw, please re-draw"</string>
+    <string name="lockpattern_pattern_confirmed_header">"OK to save the new unlock pattern"</string>
+    <string name="lockpattern_recording_inprogress">"Release finger when done."</string>
+    <string name="gesture_password_guide_text">You can create an unlock pattern, so that they borrow your phone, the application will not open.</string>
+    <string name="gesture_password_guide_creat_btn">Setting gesture password</string>
+    <string name="forght_gesture_password">Forgot your \npassword gesture?</string>
+    <string name="other_gesture">Other account \nlogin</string>
+    <string name="gesture_reset">Reset gesture</string>
+    
+    <string name="gesture_password">Gesture Password</string>
+
+    <string name="md_head_image_contact_name_default_value">No</string>
+    <string name="please_lockscreen_access_pattern">Please lockscreen access pattern</string>
+    <string name="need_relogin">After five failed, you need to log in again</string>
+    
+    <string name="confirm_log_off_the_current_account">Confirm log off the current account?</string>
+    <string name="dialog_comfirm">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="forght_gesture_password_need_to_re_sign">Forgot your gesture password, you need to log in again </string>
+    <string name="log_in_again">Login again</string>  
+    <string name="seconds_retry"> Seconds Retry</string>
+    <string name="wrong_password_you_can_enter_again">Wrong password, you can enter again</string>
+    <string name="secondary"> Secondary</string>
+    <string name="please_enter_your_old_password">Please enter your old password</string>
+    <string name="turned_gestures_password">Turned gestures password, do not repeat settings</string>
+    <string name="gesture_not_set_a_password">Gesture not set a password, please first set</string>
+    <string name="unopened_gesture_password">Unopened gesture password, please open</string>
+    
+</resources>

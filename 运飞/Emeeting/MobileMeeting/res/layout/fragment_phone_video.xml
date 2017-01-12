@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/TransparencyColor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <cn.com.zte.emeeting.app.views.TopBar
+            android:id="@+id/topbar_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black" >
+        </cn.com.zte.emeeting.app.views.TopBar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/TextSizeStyle_14"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/tv_et_meeting_name"
+                android:textColor="@color/PVFContentTextColor" />
+
+            <EditText
+                android:id="@+id/et_meeting_name"
+                style="@style/TextSizeStyle_14"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/tv_please_input_meeting_name"
+                android:maxLength="50"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/textcolor_filter_blue"
+                android:textColorHint="@color/textcolor_gray_c" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/PVFLineBgColor" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp" >
+
+            <TextView
+                android:id="@+id/type"
+                style="@style/TextSizeStyle_14"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/tv_tv_meeting_type"
+                android:textColor="@color/PVFContentTextColor" />
+
+            <TextView
+                android:id="@+id/tv_meeting_type"
+                style="@style/TextSizeStyle_14"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/iv_back1"
+                android:layout_toRightOf="@+id/type"
+                android:gravity="center_vertical|right"
+                android:text="@string/tv_please_phone"
+                android:textColor="@color/PVFContentChooseTextColor" />
+
+            <ImageView
+                android:id="@+id/iv_back1"
+                android:layout_width="8dp"
+                android:layout_height="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ico_g_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/PVFLineBgColor" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/TextSizeStyle_14"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/tv_meeting_date"
+                android:textColor="@color/PVFContentTextColor" />
+
+            <RelativeLayout
+                android:id="@+id/rel_time"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/date"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:id="@+id/tv_meeting_data"
+                    style="@style/TextSizeStyle_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/back3"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textColor="@color/PVFContentChooseTextColor" />
+
+                <ImageView
+                    android:id="@+id/back3"
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ico_g_right" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/PVFLineBgColor" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/join_leader"
+                style="@style/TextSizeStyle_14"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/tv_join_leader"
+                android:textColor="@color/PVFContentTextColor" />
+
+            <TextView
+                android:id="@+id/join_leader_other"
+                style="@style/TextSizeStyle_14"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/iv_back2"
+                android:layout_toRightOf="@+id/join_leader"
+                android:gravity="center_vertical|right"
+                android:text="@string/tv_other"
+                android:textColor="@color/PVFContentChooseTextColor" />
+
+            <ImageView
+                android:id="@+id/iv_back2"
+                android:layout_width="8dp"
+                android:layout_height="14dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ico_g_right" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/PVFLineBgColor" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/meeting_level"
+                style="@style/TextSizeStyle_14"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/tv_meeting_level"
+                android:textColor="@color/PVFContentTextColor" />
+
+            <TextView
+                android:id="@+id/tv_meeting_level"
+                style="@style/TextSizeStyle_14"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:paddingRight="20dp"
+                android:text="@string/tv_c_level"
+                android:textColor="@color/PVFContentChooseTextColor" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dp"
+            android:background="@color/PVFViewBgColor" />
+
+        <RelativeLayout
+            android:id="@+id/rel_join_meeting_num"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv1"
+                style="@style/TextSizeStyle_14"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/tv_join_meeting_num"
+                android:textColor="@color/PVFContentTextColor" />
+
+            <EditText
+                android:id="@+id/et_join_meeting_num"
+                style="@style/TextSizeStyle_14"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv1"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/tv_only_number"
+                android:inputType="number"
+                android:maxLength="8"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/textcolor_filter_blue"
+                android:textColorHint="@color/textcolor_gray_c" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/PVFLineBgColor"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rel_join_meeting_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tv2"
+                style="@style/TextSizeStyle_14"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="@string/tv_join_meeting_pwd"
+                android:textColor="@color/PVFContentTextColor" />
+
+            <EditText
+                android:id="@+id/et_join_meeting_pwd"
+                style="@style/TextSizeStyle_14"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/tv2"
+                android:background="@null"
+                android:gravity="right|center_vertical"
+                android:hint="@string/tv_only_six_number"
+                android:inputType="number"
+                android:maxLength="6"
+                android:paddingRight="20dp"
+                android:singleLine="true"
+                android:textColor="@color/textcolor_filter_blue"
+                android:textColorHint="@color/textcolor_gray_c" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/PVFViewBgColor" >
+
+            <Button
+                android:id="@+id/btn_reserve"
+                style="@style/TextSizeStyle_16"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@color/PVFPreBgColor"
+                android:text="@string/tv_reserve"
+                android:textColor="@color/PVFPreTextColor" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string name="tv_about_me">关于我们</string>
+    <string name="tv_version_num">版本号: V</string>
+    <string name="tv_zte">ZTE</string>
+    <string name="tv_zte_2">中兴</string>
+    <string name="tv_copyright">©1985-2016 中兴通讯股份有限公司 版权所有</string>
+</resources>

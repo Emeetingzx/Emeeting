@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	
+    
+	<LinearLayout
+	    android:id="@+id/ll_meetingdetail_content"
+	    android:layout_above="@+id/btn_dlg_filter_ok"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        >
+    
+	    <cn.com.zte.emeeting.app.views.TopBar
+	        android:id="@+id/meeting_detailed_topbar"
+	        android:layout_width="match_parent"
+	        android:layout_height="48dp" >
+	    </cn.com.zte.emeeting.app.views.TopBar>
+    
+
+		<LinearLayout
+		    android:id="@+id/ll_meetingdetail_choosebar"
+		    android:layout_height="48dp"
+		    android:layout_width="fill_parent"
+		    android:orientation="horizontal"
+		    android:background="@color/bgcolor_meetingdetail_top"
+		    >
+		    <RelativeLayout
+		        android:layout_marginRight="0.5dp"
+		        android:id="@+id/ll_meetingdetail_choosebar_left"
+		        android:layout_height="fill_parent"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:orientation="vertical"
+		        android:background="@drawable/bgselector_viewpage_choosebar"
+		        >
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:text="@string/meeting_meetingdetail"
+		            android:textSize="@dimen/textsize_meeting_default"
+		            android:layout_centerInParent="true"
+		            android:textColor="@drawable/textcolor_choosebar"
+		            />
+		        <ImageView
+		            android:visibility="gone"
+		            android:id="@+id/iv_meetingdetail_left"
+		            android:layout_alignParentBottom="true"
+		            android:layout_height="2dp"
+		            android:layout_width="fill_parent"
+		            android:src="@drawable/bgshape_viewpager_bar_blue"
+		            android:layout_centerHorizontal="true"
+		            />
+		    </RelativeLayout>
+		    <RelativeLayout
+		        android:id="@+id/ll_meetingdetail_choosebar_right"
+		        android:layout_height="fill_parent"
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:orientation="vertical"
+		        android:background="@drawable/bgselector_viewpage_choosebar"
+		        >
+		        <TextView 
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:text="@string/meeting_meetingroomdetail"
+		            android:textSize="@dimen/textsize_meeting_default"
+		            android:layout_centerInParent="true"
+		            android:textColor="@drawable/textcolor_choosebar"
+		            />
+		        <ImageView
+		            android:visibility="gone"
+		            android:id="@+id/iv_meetingdetail_right"
+		            android:layout_alignParentBottom="true"
+		            android:layout_height="2dp"
+		            android:layout_width="fill_parent"
+		            android:src="@drawable/bgshape_viewpager_bar_blue"
+		            android:layout_centerHorizontal="true"
+		            />
+		    </RelativeLayout>
+			<RelativeLayout
+			    android:layout_marginLeft="0.5dp"
+			    android:visibility="gone"
+				android:id="@+id/ll_meetingdetail_choosebar_control"
+				android:layout_height="fill_parent"
+				android:layout_width="0dp"
+				android:layout_weight="1"
+				android:orientation="vertical"
+				android:background="@drawable/bgselector_viewpage_choosebar"
+				>
+				<TextView
+					android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:text="@string/meeting_control"
+					android:textSize="@dimen/textsize_meeting_default"
+					android:layout_centerInParent="true"
+					android:textColor="@drawable/textcolor_choosebar"
+					/>
+				<ImageView
+					android:visibility="gone"
+					android:id="@+id/iv_meetingdetail_control"
+					android:layout_alignParentBottom="true"
+					android:layout_height="2dp"
+					android:layout_width="fill_parent"
+					android:src="@drawable/bgshape_viewpager_bar_blue"
+					android:layout_centerHorizontal="true"
+					/>
+			</RelativeLayout>
+			</LinearLayout>
+			<!-- <FrameLayout 
+			    android:id="@+id/fl_meetingdetail_container"
+			    android:layout_height="fill_parent"
+			    android:layout_width="fill_parent"
+			    ></FrameLayout> -->
+			   <android.support.v4.view.ViewPager
+			       android:id="@+id/vp_meetingdetail"
+			       android:layout_height="fill_parent"
+			       android:layout_width="fill_parent"
+			        android:flipInterval="30"
+			        android:persistentDrawingCache="animation"
+			       >
+			       
+			   </android.support.v4.view.ViewPager>
+			 
+	</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:id="@+id/l"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0000"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_choose"
+        android:layout_width="fill_parent"
+        android:layout_height="270dp"
+        android:src="@drawable/bg_no_meeting_room" />
+
+    <TextView
+        style="@style/TextSizeStyle_16"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:text="@string/tv_findroom_no_find"
+        android:textColor="@color/PVFContentTextColor" />
+
+</LinearLayout>

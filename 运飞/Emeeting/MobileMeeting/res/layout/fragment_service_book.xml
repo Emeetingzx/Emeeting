@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_above="@+id/service_book_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/service_book_time_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_servicebook_layout"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/service_book_time_im"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_service_time" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/service_book_time_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/service_book_time_im"
+                    android:textSize="14sp"
+                    android:textColor="@color/AllTextColor"
+                    android:text="@string/service_time" />
+
+                <TextView
+                    android:id="@+id/service_book_time_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/service_book_time_more"
+                    android:layout_toRightOf="@+id/service_book_time_hint"
+                    android:gravity="right"
+                    android:textSize="14sp"
+                    android:textColor="@color/PVFContentChooseTextColor"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/service_book_time_more"
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_more" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/service_book_place_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_servicebook_layout"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="20dp" >
+
+                <ImageView
+                    android:id="@+id/service_book_place_im"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_place" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/service_book_place_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/service_book_place_im"
+                    android:textSize="14sp"
+                    android:textColor="@color/AllTextColor"
+                    android:text="@string/service_place" />
+
+                 <TextView
+                    android:id="@+id/service_book_place_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/service_book_place_more"
+                    android:layout_toRightOf="@+id/service_book_place_hint"
+                    android:gravity="right|center_vertical"
+                    android:textSize="14sp"
+                    android:textColor="@color/PVFContentChooseTextColor"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/service_book_place_more"
+                    android:layout_width="8dp"
+                    android:layout_height="14dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_more" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:id="@+id/service_book_addr_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_servicebook_layout"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="15dp" >
+
+                <ImageView
+                    android:id="@+id/service_book_addr_im"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_service_address" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/service_book_addr_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/service_book_addr_im"
+                    android:textSize="14sp"
+                    android:textColor="@color/AllTextColor"
+                    android:text="@string/service_address" />
+
+                <EditText
+                    android:id="@+id/service_book_addr_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/service_book_addr_hint"
+                    android:background="@color/white"
+                    android:gravity="right|center_vertical"
+                    android:textSize="14sp"
+                    android:maxLength="30"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/AllTextColor"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/service_book_phone_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_servicebook_layout"
+                android:orientation="horizontal"
+               	android:paddingTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="15dp" >
+
+                <ImageView
+                    android:id="@+id/service_book_phone_im"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_service_phone" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/service_book_phone_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/service_book_phone_im"
+                    android:textSize="14sp"
+                    android:textColor="@color/AllTextColor"
+                    android:text="@string/service_phone" />
+
+                <EditText
+                    android:textSize="14sp"
+                    android:id="@+id/service_book_phone_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/service_book_phone_hint"
+                    android:background="@color/white"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/service_phone_hint"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/AllTextColor"
+                    android:singleLine="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+               	android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="20dp"  >
+
+                <ImageView
+                    android:id="@+id/service_book_service_im"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_service_service" />
+
+                <TextView
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/service_book_service_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/service_book_service_im"
+                    android:textSize="14sp"
+                    android:textColor="@color/AllTextColor"
+                    android:text="@string/service_service" />
+
+                <TextView
+                    android:textSize="12sp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/service_book_service_text"
+                    android:background="@color/white"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:textColor="@color/SFContentTextColor"
+                    android:text="@string/service_phone_number" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/service_book_foodlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:orientation="vertical" >
+                
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    
+    <Button 
+        android:id="@+id/service_book_submit"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:text="@string/service_submit"
+        android:textColor="@color/white"
+        android:background="@color/OrangebgColor"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textSize="16sp"
+        />
+
+</RelativeLayout>

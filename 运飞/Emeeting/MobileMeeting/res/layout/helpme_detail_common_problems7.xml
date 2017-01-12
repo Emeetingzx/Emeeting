@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/common_problems7_title_text"
+        style="@style/TextSizeStyle_20"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="@string/common_problems7_title_str" />
+
+    <cn.com.zte.emeeting.app.views.DashedLineView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" />
+
+    <LinearLayout
+        android:id="@+id/common_problems8_terms_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/common_problems8_title_text"
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:text="信用等级说明" />
+
+        <TextView
+            android:id="@+id/common_problems7_terms_1"
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="5dp"
+            android:text="@string/common_problems7_terms_1_str"
+            android:textColor="@color/HelpDetailTermsTextColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_help_detail_line"
+            android:padding="10dp"
+            android:text="信用等级"
+            android:textColor="@color/HelpDetailTermsTextColor" />
+
+        <TextView
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_help_detail_line"
+            android:padding="10dp"
+            android:text="贷款额度"
+            android:textColor="@color/HelpDetailTermsTextColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_help_detail_line"
+            android:padding="10dp"
+            android:text="A"
+            android:textColor="@color/HelpDetailTermsTextColor" />
+
+        <TextView
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_help_detail_line"
+            android:padding="10dp"
+            android:text="20000"
+            android:textColor="@color/HelpDetailTermsTextColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_help_detail_line"
+            android:padding="10dp"
+            android:text="B（默认）"
+            android:textColor="@color/HelpDetailTermsTextColor" />
+
+        <TextView
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_help_detail_line"
+            android:padding="10dp"
+            android:text="6000"
+            android:textColor="@color/HelpDetailTermsTextColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_help_detail_line"
+            android:padding="10dp"
+            android:text="C"
+            android:textColor="@color/HelpDetailTermsTextColor" />
+
+        <TextView
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_help_detail_line"
+            android:padding="10dp"
+            android:text="3000"
+            android:textColor="@color/HelpDetailTermsTextColor"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/common_problems7_terms_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <TextView
+            android:id="@+id/common_problems9_title_text"
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="会员等级说明" />
+
+        <TextView
+            android:id="@+id/common_problems7_terms_2"
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="5dp"
+            android:text="@string/common_problems7_terms_2_str"
+            android:textColor="@color/HelpDetailTermsTextColor" />
+    </LinearLayout>
+</LinearLayout>

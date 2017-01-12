@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ControlBgColor"
+    android:orientation="vertical" >
+
+    <cn.com.zte.emeeting.app.views.TopBar
+        android:id="@+id/topbar_telePhoneMeeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#d7d7d7" >
+    </cn.com.zte.emeeting.app.views.TopBar>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="90dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp" >
+
+            <Button
+                android:id="@+id/tp_bt_joinVenue"
+                android:layout_width="75dp"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:background="#ff9600"
+                android:text="@string/AMJoinMeeting"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/tp_et_ss"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tp_bt_joinVenue"
+                android:background="@drawable/bg_joinmeeting_edittext"
+                android:inputType="number"
+                android:textColor="@color/ControlTvTitleColor"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toLeftOf="@id/tp_bt_joinVenue"
+                android:background="#a5a5a5" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/AMHint"
+            android:textColor="@color/ControlTvConColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AMDomesticInsidesdsd"
+            android:textColor="@color/ControlTvConColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/AMInternationalInsidecscsc"
+            android:textColor="@color/ControlTvConColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="@string/AMExample"
+            android:textColor="@color/ControlTvConColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/AMAbroadFXO"
+            android:textColor="#7D7D7D"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

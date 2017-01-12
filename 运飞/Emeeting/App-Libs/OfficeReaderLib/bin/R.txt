@@ -1,0 +1,4 @@
+int id btn_open 0x7f040001
+int id tv_app_main_content 0x7f040000
+int layout activity_main 0x7f020000
+int string app_name 0x7f030000

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    android:layout_gravity="bottom"
+     >
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        >
+       <ListView 
+           android:layout_height="wrap_content"
+           android:layout_width="fill_parent"
+           android:id="@+id/lv_dlg_choose_list"
+           android:divider="@color/bgcolor_filter_divider_d"
+           android:dividerHeight="1dp"
+           ></ListView>
+       <Button
+           android:id="@+id/btn_cancel_dlgchoose_list"
+           android:layout_height="48dp"
+           android:layout_width="fill_parent"
+           android:text="@string/public_cancel"
+           android:textSize="16sp"
+           android:background="@color/bgcolor_gray_c"
+           android:textColor="@color/white"
+           />
+    </LinearLayout>
+</RelativeLayout>

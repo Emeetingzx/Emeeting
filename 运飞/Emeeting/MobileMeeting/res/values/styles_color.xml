@@ -1,0 +1,68 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="TransparencyColor">#00000000</color>
+
+    <!-- TB表示TopBar,公共的标题栏 -->
+    <color name="TBColor">#F4F4F4</color>
+    <color name="TBTitleColor">#2C92FD</color>
+    <color name="TBLeftTextColor">#2C92FD</color>
+    <color name="TBRightTextColor">#2C92FD</color>
+    <color name="AllTextColor">#333333</color>
+    <color name="GrayTextColorA">#AAAAAA</color>
+
+    <!-- 主题颜色 -->
+    <color name="BG_ALL">#FFFFFF</color>
+    <color name="BG_DIALOG">#E9E9E9</color>
+
+    <!-- 半透明灰色背景 -->
+    <color name="GrayTransparency">#70000000</color>
+
+    <!-- 日历控件整体背景颜色 -->
+    <color name="common_body_background_color">#F5F5F5</color>
+    <color name="common_week_background_color">#f4f4f4</color>
+
+    <!-- 日历控件公共背景颜色 -->
+    <color name="common_background_color">#E8374A</color>
+
+    <!-- 帮助中心字体颜色 -->
+    <color name="HelpDetailTermsTextColor">#999999</color>
+
+    <!-- 橘红色按钮背景 -->
+    <color name="OrangebgColor">#ff9600</color>
+
+    <!-- 左侧菜单栏背景 -->
+    <color name="bg_HomeMenu">#363636</color>
+
+    <!-- 设置界面颜色 -->
+    <color name="SFContentTextColor">#666666</color>
+    <color name="SFPushOutTextColor">#ffffff</color>
+    <color name="SFViewBgColor">#e9e9e9</color>
+    <color name="SFPushBgColor">#ff3232</color>
+
+    <!-- 电话/视频会议桥界面 -->
+    <color name="PVFContentTextColor">#333333</color>
+    <color name="PVFLineBgColor">#dddddd</color>
+    <color name="PVFContentChooseTextColor">#01aeff</color>
+    <color name="PVFJoinNumTextColor">#cccccc</color>
+    <color name="PVFJoinNumTextColors">#dddddd</color>
+    <color name="PVFViewBgColor">#e9e9e9</color>
+    <color name="PVFPreBgColor">#ff9600</color>
+    <color name="PVFPreTextColor">#ffffff</color>
+    <!-- 摇一摇界面 -->
+    <color name="SABgColor">#ff9600</color>
+    <color name="SAPlaceTextColor">#333333</color>
+    <color name="SASurePlacetTextColor">#666666</color>
+    <color name="SADialogBgColor">#f8f8f8</color>
+    <color name="SAViewBgColor">#f9f9f9</color>
+
+    <!-- 意见反馈界面颜色 -->
+
+    <color name="SFBtitleTvColor">#333333</color>
+    <color name="SFBtitleBgColor">#f4f4f4</color>
+    <color name="SFBbtnCancleBgColor">#cccccc</color>
+    <color name="SFBbtnSureBgColor">#ff9600</color>
+    <color name="SFBbtnViewBgColor">#f9f9f9</color>
+<!--     关于我们 -->
+    <color name="SFBtvTextColor">#999999</color>
+
+</resources>

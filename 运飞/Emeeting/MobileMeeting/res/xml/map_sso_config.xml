@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map linked="true" >
+    
+    <!-- ####################   基础配置       ####################  -->
+    <!-- MOA包名  -->
+     <entry key="sso_moa_package_name" >com.zte.softda</entry>
+    <!--<entry key="sso_moa_package_name" >com.zte.softdatest</entry>-->
+    <!-- 是否开启手势密码  false | true  -->
+    <entry key="sso_open_gusture_lock_flag" >false</entry>
+     
+     
+    <!-- ####################   API服务器配置（正式环境）        ####################  -->
+    <!-- API 服务器是否采用Https协议 false | true  -->
+     <entry key="sso_api_server_https_flag" >false</entry>
+    <!-- API 服务器外网IP  -->
+     <entry key="sso_api_server_ip_outer" >mdm.zte.com.cn</entry>
+    <!--  API 服务器内网IP  -->
+     <entry key="sso_api_server_ip_inner" >mdm.zte.com.cn</entry>
+    <!--  API 服务器外网端口  -->
+     <entry key="sso_api_server_port_outer" >80</entry>
+    <!-- API 服务器内网端口   -->
+     <entry key="sso_api_server_port_inner" >80</entry>
+    
+    <!-- ####################   API服务器配置（测试环境）        ####################  -->
+    <!-- API 服务器外网IP  -->
+    <!--<entry key="sso_api_server_ip_outer" >mdmtest.zte.com.cn</entry>-->
+    <!--  API 服务器内网IP  -->
+    <!--<entry key="sso_api_server_ip_inner" >mdmtest.zte.com.cn</entry>-->
+    <!-- API 服务器外网端口  -->
+    <!--<entry key="sso_api_server_port_outer" >8888</entry>-->
+    <!-- API 服务器内网端口  -->
+    <!--<entry key="sso_api_server_port_inner" >8888</entry>-->
+    
+    
+    <!-- ####################   注销设备的浏览器URL地址       ####################  -->
+    <!-- 注销设备的浏览器URL外网地址  -->
+    <entry key="sso_device_unreg_outer_url" >http://zte.com.cn/unreg.do</entry>
+    <!-- 注销设备的浏览器URL内网地址  -->
+    <entry key="sso_device_unreg_inner_url" >http://10.10.10.10/unreg.do</entry>
+</map>

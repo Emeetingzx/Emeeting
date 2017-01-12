@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_cancelbook_meetingdetail"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                style="@style/style_meetingdetail_left"
+                android:text="@string/md_meetingtheme" />
+
+            <TextView
+                android:id="@+id/tv_meetingdetail_title"
+                style="@style/style_meetingdetail_right"
+                android:layout_width="200dp"
+                android:gravity="center_vertical|right"
+                android:text="@string/empty" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/bgcolor_filter_divider_d"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                style="@style/style_meetingdetail_left"
+                android:text="@string/md_meetingdate" />
+
+            <TextView
+                android:id="@+id/tv_meetingdetail_date"
+                style="@style/style_meetingdetail_right"
+                android:layout_width="200dp"
+                android:gravity="right|center_vertical"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:text="@string/empty" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/bgcolor_filter_divider_d"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                style="@style/style_meetingdetail_left"
+                android:text="@string/md_meetingtime_length" />
+
+            <TextView
+                android:id="@+id/tv_meetingdetail_duration"
+                style="@style/style_meetingdetail_right"
+                android:layout_width="200dp"
+                android:gravity="center_vertical|right"
+                android:text="@string/empty" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/bgcolor_filter_divider_d"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                style="@style/style_meetingdetail_left"
+                android:text="@string/md_meeting_organizer" />
+
+            <TextView
+                android:id="@+id/tv_meetingdetail_organizer"
+                style="@style/style_meetingdetail_right"
+                android:layout_width="200dp"
+                android:gravity="center_vertical|right"
+                android:text="@string/empty" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/bgcolor_filter_divider_d"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                style="@style/style_meetingdetail_left"
+                android:text="@string/md_join_leader" />
+
+            <TextView
+                android:id="@+id/tv_meetingdetail_leader"
+                style="@style/style_meetingdetail_right"
+                android:layout_width="200dp"
+                android:gravity="center_vertical|right"
+                android:text="@string/empty" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/bgcolor_filter_divider_d"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                style="@style/style_meetingdetail_left"
+                android:text="@string/meeting_meeting_level" />
+
+            <TextView
+                android:id="@+id/tv_meetingdetail_meetinglevel"
+                style="@style/style_meetingdetail_right"
+                android:layout_width="200dp"
+                android:gravity="center_vertical|right"
+                android:text="@string/empty" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/bgcolor_filter_divider_d"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" >
+
+            <TextView
+                android:id="@+id/tv_label_meetingplace"
+                style="@style/style_meetingdetail_left"
+                android:layout_height="48dp"
+                android:text="@string/md_meeting_place" />
+
+            <TextView
+                android:id="@+id/tv_meetingdetail_meetingplace"
+                style="@style/style_meetingdetail_right"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:gravity="center_vertical|right"
+                android:text="@string/md_meeting_place_nothing"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/ll_meetingdetail_meetingplace"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_meetingdetail_attendance"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp" >
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@color/bgcolor_filter_divider_d"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/textcolor_gray_6"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_centerVertical="true"
+                android:text="@string/attendance_list" />
+            
+            <ImageView 
+                android:layout_centerVertical="true"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/icon_more"
+                android:scaleType="centerInside"
+                />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/bgcolor_filter_divider_d"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_cancelbook_meetingdetail"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bgcolor_filter_yellow"
+        android:text="@string/meeting_cancel_book"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

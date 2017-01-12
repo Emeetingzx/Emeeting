@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="ZTEAndroid-App-Lib" default="help">
+    
+     <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter" /> 
+     <property name="java.encoding" value="UTF-8" /> 
+
+    <!-- The ant.properties file can be created by you. It is only edited by the
+         'android' tool to add properties to it.
+         This is the place to change some Ant specific build properties.
+         Here are some properties you may want to change/update:
+
+         source.dir
+             The name of the source directory. Default is 'src'.
+         out.dir
+             The name of the output directory. Default is 'bin'.
+
+         For other overridable properties, look at the beginning of the rules
+         files in the SDK, at tools/ant/build.xml
+
+         Properties related to the SDK location or the project target should
+         be updated using the 'android' tool with the 'update' action.
+
+         This file is an integral part of the build system for your
+         application and should be checked into Version Control Systems.
+
+         -->
+    <property file="ant.properties" />
+
+    <!-- if sdk.dir was not set from one of the property file, then
+         get it from the ANDROID_HOME env var.
+         This must be done before we load project.properties since
+         the proguard config can use sdk.dir -->
+    <property environment="env" />
+    <condition property="sdk.dir" value="${env.ANDROID_HOME}">
+        <isset property="env.ANDROID_HOME" />
+    </condition>
+
+    <!-- The project.properties file is created and updated by the 'android'
+         tool, as well as ADT.
+
+         This contains project specific properties such as project target, and library
+         dependencies. Lower level build properties are stored in ant.properties
+         (or in .classpath for Eclipse projects).
+
+         This file is an integral part of the build system for your
+         application and should be checked into Version Control Systems. -->
+    <loadproperties srcFile="project.properties" />
+
+    <!-- quick check on sdk.dir -->
+    <fail
+            message="sdk.dir is missing. Make sure to generate local.properties using 'android update project' or to inject it through the ANDROID_HOME environment variable."
+            unless="sdk.dir"
+    />
+
+    <!--
+        Import per project custom build rules if present at the root of the project.
+        This is the place to put custom intermediary targets such as:
+            -pre-build
+            -pre-compile
+            -post-compile (This is typically used for code obfuscation.
+                           Compiled code location: ${out.classes.absolute.dir}
+                           If this is not done in place, override ${out.dex.input.absolute.dir})
+            -post-package
+            -post-build
+            -pre-clean
+    -->
+    <import file="custom_rules.xml" optional="true" />
+
+    <!-- Import the actual build file.
+
+         To customize existing targets, there are two options:
+         - Customize only one target:
+             - copy/paste the target into this file, *before* the
+               <import> task.
+             - customize it to your needs.
+         - Customize the whole content of build.xml
+             - copy/paste the content of the rules files (minus the top node)
+               into this file, replacing the <import> task.
+             - customize to your needs.
+
+         ***********************
+         ****** IMPORTANT ******
+         ***********************
+         In all cases you must update the value of version-tag below to read 'custom' instead of an integer,
+         in order to avoid having your file be overridden by tools such as "android update project"
+    -->
+    <!-- version-tag: 1 -->
+    <import file="${sdk.dir}/tools/ant/build.xml" />
+    
+	<target name="releaseLib">
+	    <echo message="release ZTEAndroid-App-Lib ..."/>    
+	    <echo message="delete libs dir"/>   
+        <delete dir="libs"/>  
+        <mkdir dir="libs" />
+        <echo message="copy libs"/>
+        
+        <copy todir="libs" file="${ksoap2-android-assembly-3.2.0-jar-with-dependencies.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${android-async-http.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${android-query-full.0.26.2-beta.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${android-support-v4.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${commons-codec-1.5.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${commons-io-2.4.jar.path}"  overwrite="true"  />
+		<copy todir="libs" file="${httpmime-4.3.6.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${eventbus-2.2.0.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${fastjson-1.1.33.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${gson-1.7.1.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${guice-4.0-beta-no_aop.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${javax.inject-1.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${ormlite-android-4.46.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${ormlite-core-4.46.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${roboguice-3.0-alpha-2.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${zxing-core-3.0.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${zte-crypto.jar.path}"  overwrite="true"  />
+        
+        <copy todir="libs" file="${zteandroid-app.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${zteandroid-appcommon.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${zteandroid-asynchttp.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${zteandroid-cache.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${zteandroid-common.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${zteandroid-emmconfig.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${zteandroid-eventbus.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${zteandroid-filestorage.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${zteandroid-logmgr.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${zteandroid-orm.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${zteandroid-securityauth.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${zteandroid-validation.jar.path}"  overwrite="true"  />
+        <copy todir="libs" file="${zteandroid-widget.jar.path}"  overwrite="true"  />
+		
+		<echo message="copy ORM JNI libs"/>
+		<copy todir="libs" file="${android-database-sqlcipher.jar.path}"  overwrite="true"  />
+		<copy todir="res/raw" file="${android-database-sqlcipher.icudt46l.path}"  overwrite="true"  />
+		<mkdir dir="libs/armeabi" />
+		<copy todir="libs/armeabi" overwrite="true" >
+           <fileset dir="${android-database-sqlcipher.armeabi.dir}">
+               <exclude name="**/.svn"/>
+		   </fileset>
+        </copy>
+    
+	</target>  
+
+</project>

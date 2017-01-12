@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#292929" >
+
+    <RelativeLayout
+        android:id="@+id/topBar_leftLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/topbar_btn_image"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <ImageView
+            android:id="@+id/topBar_leftBtn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/topBar_leftTextBtn"
+            style="@style/TextSizeStyle_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="@color/TBLeftTextColor"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/topBar_title"
+        style="@style/TextSizeStyle_18"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toRightOf="@id/topBar_leftLayout"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:id="@+id/topBar_rightLayout_left"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@+id/topBar_rightLayout"
+        android:background="@drawable/topbar_btn_image"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/topBar_rightBtn_left"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:visibility="gone"
+            android:gravity="center" />
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/topBar_rightBtn_tag_left"
+            style="@style/TextSizeStyle_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/topBar_rightBtn_left"
+            android:layout_alignTop="@id/topBar_rightBtn_left"
+            android:background="@drawable/ico_logo"
+            android:gravity="center"
+            android:textColor="@color/TBRightTextColor" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/topBar_rightLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/topbar_btn_image"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp" >
+
+        <ImageView
+            android:id="@+id/topBar_rightBtn"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/topBar_rightTextBtn"
+            style="@style/TextSizeStyle_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

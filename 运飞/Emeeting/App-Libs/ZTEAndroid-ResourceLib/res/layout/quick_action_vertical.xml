@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <!-- 内容区 -->
+    <LinearLayout
+        android:id="@+id/ll_quickaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_quick_action_bg"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_bottom_15"
+        android:paddingLeft="@dimen/padding_left_15"
+        android:paddingRight="@dimen/padding_right_15" />
+
+    <ImageView
+        android:id="@+id/arrow_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iv_quick_action_arrow_top" />
+
+    <ImageView
+        android:id="@+id/arrow_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_quickaction"
+        android:src="@drawable/iv_quick_action_arrow_bottom" />
+
+    <ImageView
+        android:id="@+id/arrow_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iv_quick_action_arrow_left" />
+
+    <ImageView
+        android:id="@+id/arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/ll_quickaction"
+        android:src="@drawable/iv_quick_action_arrow_right" />
+
+</RelativeLayout>

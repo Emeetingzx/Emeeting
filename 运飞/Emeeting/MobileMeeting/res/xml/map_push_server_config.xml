@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map linked="true" >
+    <!-- ####################   eMeeting 消息推送服务器配置       ####################  -->
+    
+    <!--  消息推送环境 
+                      正式环境：env.pro
+                      测试环境：env.test
+                      开发环境：env.dev
+    -->
+    <entry key="push_env" >env.pro</entry>
+    
+    
+    <!-- 
+    	ie浏览器使用【测试地址】网址：  【这个不需要在这里配置 是在ie浏览器上使用】
+    	外网：http://183.62.165.201:80/msgcenter/app/Main.jsp
+		内网：http://192.168.176.163:80/msgcenter/app/Main.jsp
+		
+		ie浏览器使用【正式环境】网址
+		http://10.30.6.26/msgcenter/app/Login.jsp
+     -->
+     
+     
+    
+    <!-- 消息推送服务器外网【正式环境】地址 -->
+    <entry key="push_server_url_outer" >ws://210.21.223.24:80/msgconnect/websocket/createchannel</entry>
+    <!-- 消息推送服务器内网【正式环境】地址 -->
+    <entry key="push_server_url_inner" >ws://192.168.170.199:80/msgconnect/websocket/createchannel</entry>
+    
+    
+    <!-- 
+    
+     	消息中心（推送）测试：
+		内网：192.168.176.163  80
+		外网：183.62.165.201   80
+	
+		正式地址：
+		内网：192.168.170.199  80
+		外网：210.21.223.24    80
+		
+		测试地址：
+			外网：http://183.62.165.201/msgcenter/app/Main.jsp
+			内网：http://192.168.176.163/msgcenter/app/Main.jsp
+			
+		         正式地址：http://10.30.6.26/msgcenter/app/Login.jsp
+    
+     -->
+    
+       
+    
+    
+    
+    <!-- 接受消息的APP的appID(自身的appID)
+               请按照实际的环境（测试 A00258|正式A00218）
+    -->
+    <entry key="push_receive_app_id" >A00218</entry>
+    
+    <!-- 消息推送通道建链的APP的appID
+                目前由MOA负责建链,请填写MOA的APP_ID(注意区分正式环境和测试环境)：
+                正式环境：       MOA正式包：
+                 APP_ID: A00154 
+                测试环境：        MOADemo(模拟MOA)：
+                 APP_ID: a00057 
+    -->
+    <entry key="push_master_app_id" >A00154</entry>
+    
+</map>

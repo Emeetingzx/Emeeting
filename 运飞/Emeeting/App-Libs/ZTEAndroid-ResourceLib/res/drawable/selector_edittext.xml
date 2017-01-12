@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- 有焦点的按钮 失去焦点 -->
+  <item
+        android:state_focused="true"
+        android:state_pressed="false"
+        android:drawable="@drawable/edittext_input_normal" />
+	<!-- 获取焦点的按钮重复点击 -->
+    <item
+        android:state_focused="true"
+        android:state_pressed="true"
+        android:drawable="@drawable/edittext_input_normal" />
+     <!-- 没有焦点按钮的第一次点击(切换点击) -->
+   <item
+        android:state_focused="false"
+        android:state_pressed="true"
+        android:drawable="@drawable/edittext_input_focus" />
+    <item
+        android:drawable="@drawable/edittext_input_normal" />
+</selector>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_app_update_main_bg_corners"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <!-- 内容 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/padding_left_30"
+        android:paddingRight="@dimen/padding_right_30" >
+
+        <TextView
+            android:layout_marginTop="@dimen/layout_margin_top_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/client_version_new_version_title_text"
+            android:textColor="@color/app_update_title_text"
+            android:textSize="@dimen/textsize_21" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top_20"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="@dimen/textsize_18"
+                android:text="@string/client_version_new_version_number_head_text"
+                android:textColor="@color/app_update_content_text" />
+
+            <!-- 新版本号 -->
+
+            <TextView
+                android:id="@+id/tv_new_version_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_18"
+                android:textColor="@color/app_update_content_text" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_update_content"
+            android:layout_width="@dimen/layout_width_150"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:gravity="left"
+            android:textSize="@dimen/textsize_18"
+            android:text="@string/client_version_new_version_content_head_text"
+            android:textColor="@color/app_update_content_text" />
+
+        <!-- 新版本特性 -->
+
+        <TextView
+            android:id="@+id/tv_update_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginBottom="@dimen/layout_margin_bottom"
+            android:layout_marginTop="@dimen/layout_margin_top"
+            android:textSize="@dimen/textsize_18"
+            android:textColor="@color/app_update_content_text" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layout_height_1"
+        android:background="@color/app_update_foot_split_line" />
+
+    <!-- 可选升级 -->
+
+    <LinearLayout
+        android:id="@+id/ll_update_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layout_height_60"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/bg_app_update_footer_bg_corners"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/client_version_do_update_text"
+            android:textColor="@drawable/selector_app_update_confirm_text_color"
+            android:textSize="@dimen/textsize_20" />
+
+        <View
+            android:layout_width="@dimen/layout_width_1"
+            android:layout_height="fill_parent"
+            android:layout_weight="0"
+            android:background="@color/app_update_foot_split_line" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/client_version_cencel_update_text"
+            android:textColor="@drawable/selector_app_update_cancel_text_color"
+            android:textSize="@dimen/textsize_20" />
+    </LinearLayout>
+
+    <!-- 强制升级 -->
+
+    <LinearLayout
+        android:id="@+id/ll_force_update_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/layout_height_60"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@drawable/bg_app_update_footer_bg_corners"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_force_update"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/transparent"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/client_version_do_update_text"
+            android:textColor="@drawable/selector_app_update_confirm_text_color"
+            android:textSize="@dimen/textsize_20" />
+    </LinearLayout>
+
+</LinearLayout>

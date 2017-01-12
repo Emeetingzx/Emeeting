@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tv_message_detail_push">退订</string>
+    <string name="tv_message_detail_end">结束</string>
+    <string name="tv_message_detail_no_id">没有获取到id操作无法往下进行</string>
+    
+    <string name="tv_message_detail_serve_no_id">服务端返回id为空不能查看详情</string>
+    <string name="tv_message_detail_meeting_detail">会议详情</string>
+    <string name="tv_message_detail_meeting_no_do">该会议不可操作</string>
+    <string name="tv_message_detail_sure_push">确定退订</string>
+     <string name="tv_message_detail_sure_end">确定结束</string>
+     <string name="tv_message_detail_success_push">退订成功</string>
+     <string name="tv_message_detail_success_end">结束成功</string>
+     
+     <string name="tv_message_detail_routine_meeting">常规会议</string>
+     <string name="tv_message_detail_phone_meeting">电话会议桥</string>
+     <string name="tv_message_detail_train_meeting">培训会议</string>
+     <string name="tv_message_detail_net_meeting">网真会议</string>
+     <string name="tv_message_detail_cloud_meeting">云招标会议</string>
+     <string name="tv_message_detail_video_meeting">视频会议桥</string>
+     
+      <string name="tv_message_detail_phone_meeting_success">电话会议已经预订成功</string>
+       <string name="tv_message_detail_video_meeting_success">视频会议已经预订成功</string>
+     
+     <string name="tv_message_detail_phone_or_video_meeting">电话/视频会议桥</string>
+     
+     <string name="tv_message_detail_two_leader">二层领导</string>
+     <string name="tv_message_detail_three_leader">三层领导</string>
+     <string name="tv_message_detail_four_leader">四层领导</string>
+     <string name="tv_message_detail_other_leader">其他</string>
+     
+     <string name="tv_message_detail_a_level">A级</string>
+     <string name="tv_message_detail_b_level">B级</string>
+     <string name="tv_message_detail_c_level">C级</string>
+     
+      <string name="tv_message_detail_sure">确定</string>
+      <string name="tv_message_detail_cancel">取消</string>
+       <string name="tv_message_detail_ispush">是否退出当前账号？</string>
+       
+       <string name="tv_message_detail_reserve_success">视频会议已经预订成功</string>
+       <string name="tv_message_detail_continue_reserve">继续预订</string>
+       <string name="tv_message_detail_look_my_meeting">查看我的会议</string>
+       
+          <string name="tv_message_detail_end_time">结束时间需晚于开始时间</string>
+          
+            <string name="tv_message_please_input_pwd">请输入会议密码</string>
+              <string name="tv_message_please_input_name">请输入会议名称</string>
+</resources>

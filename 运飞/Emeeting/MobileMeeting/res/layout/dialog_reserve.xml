@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_content"
+        style="@style/TextSizeStyle_16"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/tv_message_detail_reserve_success"
+        android:textColor="@color/PVFContentTextColor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/TextSizeStyle_16"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/PVFPreBgColor"
+            android:text="@string/tv_message_detail_continue_reserve"
+            android:textColor="@color/PVFPreTextColor" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:textColor="@color/PVFPreTextColor" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            style="@style/TextSizeStyle_16"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/PVFPreBgColor"
+            android:text="@string/tv_message_detail_look_my_meeting"
+            android:textColor="@color/PVFPreTextColor" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/rl_bg_itemchooseplace"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="@drawable/bgselector_dlg_chooseplace_nochange"
+        >
+	    <TextView 
+	        android:layout_height="48dp"
+	        android:layout_width="fill_parent"
+	        android:id="@+id/tv_itemchooseplace_name"
+	        android:text="@string/dlg_place_xian_tmp"
+	         android:textSize="@dimen/textsize_meeting_big"
+	        android:gravity="center"
+	        android:textColor="@drawable/textcolor_item_filter_left"
+	        />
+	    <ImageView
+	        android:id="@+id/iv_itemchooseplace"
+	        android:layout_height="16dp"
+	        android:layout_width="14dp"
+	        android:src="@drawable/ico_item_center_selected"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        />
+    </RelativeLayout>
+</RelativeLayout>

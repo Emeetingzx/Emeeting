@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 数据库文件加密方案版本 初始化为1 
+                      后续如果修改密码，请增加版本号值
+    -->
+    <string name="database_user_scope_db_crypto_version">1</string>
+    
+    <!-- 数据库文件密码   
+                为空：不加密   
+                如果修改密码，请增加版本号值(database_user_scope_db_crypto_version)
+    -->
+    <string name="database_user_scope_db_crypto_password">1eElSUk</string>
+
+    
+    
+    <!-- ===================================================================================== -->
+    
+    
+    
+    <!-- 注意 ：更新版本号，会导致所有数据库表重建   除非特殊情况请勿更新版本号 -->
+    <integer name="database_user_scope_db_version">1</integer>
+
+    <!-- 用户数据库文件名后缀(前缀为  用户账号 ,不允许中文用户名 ) -->
+    <string name="database_user_scope_db_name_suffix">_zte.db</string>
+
+    <!-- 用户名表定义 -->
+    <string-array name="database_user_scope_tables">
+        <!-- 添加实体item，在不改变database_user_db_version版本号的情况下，会保留现有数据库表及数据，自动创建新表 -->
+        <!-- <item>cn.com.zte.client.android.common.database.entity.SystemConfigVO</item> -->
+
+        <!-- 添加实体item，在不改变版本号的情况下，会保留现有数据库表及数据，自动创建新表 -->
+        <item>cn.com.zte.client.android.common.database.entity.vo.UserVO</item>
+
+        <!-- 继续添加  item -->
+    </string-array>
+
+</resources>

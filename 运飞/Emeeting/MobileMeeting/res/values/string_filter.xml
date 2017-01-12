@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="meeting_location_failed">抱歉,获取不到您的位置信息,请选择会议区域!</string>
+    <string name="meeting_location_getmeeting">正在获取您的位置和会议室信息,请稍候...</string>
+    <string name="meeting_scale">规模:</string>
+    <string name="meeting_scale_tmp">10-20人</string>
+
+    
+    <string name="public_projector">投影仪</string>
+    <string name="public_tv">电视</string>
+    <string name="public_phone">电话</string>
+        
+    <string name="meeting_projector">投影仪:</string>
+    <string name="meeting_projector_tmp">支持收发双流</string>
+    
+    <string name="meeting_tv">电视:</string>
+    <string name="meeting_tv_tmp">不支持双流</string>
+    
+    <string name="meeting_phone">电话:</string>
+    <string name="meeting_phone_tmp">有</string>
+    
+    
+    <string name="public_cancel">取消</string>
+    <string name="public_ok">确定</string>
+    
+    <string name="meeting_cancel_book">退订</string>
+    <string name="meeting_book">预订</string>
+    <string name="meeting_choose_meeting_area">选择会议区域</string>
+    <string name="meeting_meetingroomdetail">会议室详情</string>
+    <string name="meeting_control">会议控制</string>
+    <string name="meeting_meetingdetail">会议详情</string>
+    <string name="meeting_meetingname">会议名称</string>
+    <string name="meeting_join_leader">参会领导</string>
+    <string name="meeting_join_leader_tmp">其他</string>
+    <string name="meeting_meeting_level">会议级别</string>
+    <string name="meeting_meeting_level_tmp">C级</string>
+    <string name="hint_input_meetingname">请输入会议名称</string>
+    
+    <!-- 会议详情中要使用的字段  md表meetingdetail-->
+    <string name="md_meetingtheme">会议主题</string>
+    <string name="md_meetingtheme_tmp">Emeeting需求评估</string>
+    
+    <string name="md_meetingdate">会议日期</string>
+    <string name="md_meetingdate_tmp">2015-10-11 10:00-12:00</string>
+    
+    <string name="md_meetingtime_length">会议时长</string>
+    <string name="md_meetingtime_length_tmp">2小时</string>
+    
+    <string name="md_meeting_organizer">组织者</string>
+    <string name="md_meeting_organizer_tmp">邹建平 10146314</string>
+    
+    
+    <string name="md_join_leader">参会领导</string>
+    <string name="md_join_leader_tmp">二层领导</string>
+    
+    
+    <string name="md_meeting_place">会议地点</string>
+    <string name="md_meeting_place_tmp">深圳科技园研发大楼</string>
+    <string name="md_meeting_place_nothing">无相关会议室信息</string>
+    <string name="empty"></string>
+    <string name="md_meeting_place_nothings">无相关会议室信息。</string>
+    
+    
+    <string name="md_meetingroom_scale">会议室规模</string>
+    <string name="md_meetingroom_scale_tmp">10-30人</string>
+    
+    <string name="md_meetingroom_tv_terminal">电视</string>
+    <string name="md_meetingroom_tv_terminal_tmp">有(高清)</string>
+    
+    <string name="md_meetingroom_meetingphone_2">电话</string>
+    <string name="md_meetingroom_meetingphone_tmp">有</string>
+    
+    <string name="md_meetingroom_projector">投影仪</string>
+    <string name="md_meetingroom_projector_tmp">有</string>
+    
+    <string name="md_meetingroom_type">会议室类型</string>
+    <string name="md_meetingroom_type_tmp">普通会议室</string>
+    
+    
+    <string name="mymeeting_mybooked">我预订的</string>
+    <string name="mymeeting_myorganization">我组织的</string>
+    <string name="mymeeting_myattended">我参加的</string>
+    
+    <string name="mymeeting_item_title_tmp">TSM V2.4.6 需求澄清会议</string> 
+    <string name="mymeeting_item_place_tmp">深圳 科技园 研发楼16-02</string> 
+    <string name="mymeeting_item_date_tmp">2015-09-10 10:00-12:00</string> 
+    <string name="mymeeting_item_person_tmp">万成玲 00146316</string> 
+    
+    <string name="mymeeting_dlg_confirmbook">确定退订 </string>
+    <string name="mymeeting_dlg_confirmbook_tmp"> 吗?</string>
+    
+    
+    <string name="meeting_dlg_booksuccess">会议已成功预订</string>
+    <string name="meeting_dlg_cancelbooksuccess">退订成功</string>
+    <string name="meeting_dlg_cancelbookfailed">退订失败</string>
+    <string name="meeting_dlg_bookagain">继续预订</string>
+    <string name="meeting_dlg_lookmymeeting">查看我的会议</string>
+    
+    <string name="mbf_no_meetingrooms">很报歉，没有符合条件的会议室！</string>
+    <string name="mbf_not_booktime">0:00-8:20不提供会议预订服务</string>
+    <string name="msg_no_meeting">很报歉，没有符合条件的会议！</string>
+    <string name="msg_meetingroom_timeout">该会议室时间已过期</string>
+    
+    
+    <string name="mymeeting_opstate_stop">结束</string>
+    <string name="mymeeting_opstate_cancelbook">退订</string>
+    
+    <string name="mbf_title">会议预订</string>
+    <string name="mbf_title_meetingbook">会议预订</string>
+    
+    <string name="mbf_msg_endtime_need_bigger_than_starttime">结束时间需晚于开始时间</string>
+    <string name="mbf_msg_time_exception">时间选择异常</string>
+    <string name="mbf_msg_starttime_need_bigger_than_currenttime">开始时间必须晚于当前时间</string>
+    <string name="mbf_msg_starttime_need_bigger_than_currenttime_please_rechoose">开始时间必须晚于当前时间,请重新选择预订时间</string>
+    
+    <string name="msg_choosed_time_not_serial_please_rechoose">所选会议时间不连续，请重新选择</string>
+    <string name="msg_please_choose_periods_of_time">请选择会议时间段</string>
+    
+    <string name="msg_confirm_cancelbook_meetingroom">确定退订会议室</string>
+    <string name="msg_confirm_stop_meetingroom">确定结束会议室</string>
+    <string name="msg_stop_meetingroom_success">会议室结束成功</string>
+    <string name="msg_cancelbook_meetingroom_success">会议室退订成功</string>
+    
+    <string name="msg_stop_meeting_success">结束会议成功</string>
+    <string name="msg_cancelbook_meeting_success">退订会议成功</string>
+    
+    <string name="msg_confirm_cancelbook">确定退订</string>
+    <string name="msg_confirm_stop">确定结束</string>
+    <string name="msg_no_meeting_to_cancelbook">无可退订的会议</string>
+    
+    <string name="mymeeting_title">我的会议</string>
+    <string name="mymeeting_title_meetingdetail">会议详情</string>
+    <string name="mymeeting_title_right">所有会议</string>
+    <string name="msg_request_failed">请求失败</string>
+    <string name="msg_please_input_meetingname">请输入会议名称!</string>
+    <string name="msg_please_lockmeetingroom_again">会议id为空,请重新锁定会议室</string>
+    
+    <string name="mymeeting_meetinglevel_A">A级</string>
+    <string name="mymeeting_meetinglevel_B">B级</string>
+    <string name="mymeeting_meetinglevel_C">C级</string>
+    
+    <string name="mbf_filter">筛选</string>
+    <string name="mbf_place">深圳</string>
+    <string name="dlg_place_else_tmp">其他</string>
+    <string name="dlg_place_xian_tmp">西安</string>
+    <string name="dlg_place_RD_building_tmp">研发大楼</string>
+    
+    <string name="dlg_title_filter">筛选</string>
+    <string name="dlg_title_chooseplace">地点选择</string>
+    <string name="dlg_title_clear_filter">清除筛选</string>
+    <string name="dlg_condition_no_limit">不限</string>
+    
+    <string name="dlg_time_state_choosed">已选</string>
+    <string name="dlg_time_state_can_not_choose">不可选</string>
+    <string name="dlg_time_state_can_choose">可选</string>
+    
+    <string name="dlg_filter_label_device">设备</string>
+    <string name="dlg_filter_label_floor">楼层</string>
+    <string name="dlg_filter_label_personnum">人数</string>
+    
+    <string name="dlg_filter_choosestate_no_limit">不限</string>
+    <string name="dlg_filter_choosestate_have">有</string>
+    <string name="dlg_filter_choosestate_have_nothing">无</string>
+    
+    
+    
+    
+    <string name="mbf_hour">小时</string>
+    <string name="mbf_previous_day">前一天</string>
+    <string name="mbf_next_day">后一天</string>
+    
+    
+    <!-- 以下为基础数据 -->
+    <string-array name="arr_PersonNumName">
+    	<item >不限</item>
+		<item >10人以下</item>
+		<item >10&#8211;30人</item>
+		<item >30&#8211;60人</item>
+		<item >60人以上</item>
+	</string-array>
+	
+    
+    	<string name="meeting_phonestate_0">无</string>
+		<string name="meeting_phonestate_1">POLYCOM</string>
+		<string name="meeting_phonestate_2">USB-Phone</string>
+		
+		<string name="meeting_projectorstate_0">无</string>
+		<string name="meeting_projectorstate_1">不支持双流</string>
+		<string name="meeting_projectorstate_2">支持收发双流</string>
+		<string name="meeting_projectorstate_3">支持接收双流</string>
+		
+		<string name="meeting_tvstate_0">无</string>
+		<string name="meeting_tvstate_1">有</string>
+		
+		<string name="meeting_leaderlevel_1">二层领导</string>
+		<string name="meeting_leaderlevel_2">三层领导</string>
+		<string name="meeting_leaderlevel_3">四层领导</string>
+		<string name="meeting_leaderlevel_4">其他</string>
+		
+		<string name="meeting_level_1">A级</string>
+		<string name="meeting_level_2">B级</string>
+		<string name="meeting_level_3">C级</string>
+</resources>

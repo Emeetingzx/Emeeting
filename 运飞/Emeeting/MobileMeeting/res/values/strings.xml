@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Emeeting</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="setting_str">设置</string>
+    <string name="home_bot_getMeet">会议预订</string>
+    <string name="home_bot_meetState">会议室查询</string>
+    <string name="home_bot_shake">摇一摇</string>
+    <string name="home_bot_video">电话/视频会议桥</string>
+    <string name="home_bot_me">我的会议</string>
+    <string name="home_bot_valueadd">增值服务</string>
+    <string name="home_bot_scan">扫一扫签到</string>
+    <!-- 公共字段 资源public(简写P) -->
+    <string name="PEnterTipStr">请输入</string>
+    <string name="PChooseTipStr">请选择</string>
+    <string name="PLogoutTipStr">确认退出？</string>
+    <string name="PCancelStr">取消</string>
+    <string name="PSureStr">确定</string>
+    <string name="PCleanStr">清空</string>
+    <string name="PCompleteStr">完成</string>
+    <string name="PYesStr">是</string>
+    <string name="PNoStr">否</string>
+    <string name="PCloseStr">关闭</string>
+    <string name="cancel">取消</string>
+    <!-- 会控界面 -->
+    <string name="get_meeting_fail">获取会议详情失败</string>
+    <string name="disconnect">待呼叫</string>
+    <string name="connection">已连接</string>
+    <string name="calling">拨号中</string>
+    <string name="state">状态：</string>
+    <string name="call">呼叫</string>
+    <string name="quiet">禁言</string>
+    <string name="restore_call">通话</string>
+    <string name="hangup">挂断</string>
+    <string name="delete">删除</string>
+    <string name="meeting_attendance">签到</string>
+    <string name="attendance_list">签到表</string>
+    <string name="hint_meeting_seach">输入GK号，手机，固话查询</string>
+    <string name="hint_meeting_add">加入会场</string>
+    <string name="meeting_room_list">会场列表</string>
+    <string name="meeting_control_time_extend">延长视频通话30分钟</string>
+    <string name="meeting_extend_sure">您确定延长30分钟吗</string>
+    <string name="meeting_extend_conflict_sure">您延长的会议与该会议室下一场会议有冲突</string>
+    <string name="extend">延长</string>
+    <string name="meeting_book_lock">被锁定</string>
+    <string name="meeting_book_locked">不可预订</string>
+    <string name="meeting_extend_success">会议延长成功</string>
+
+    <!-- blvl表示BaseListViewLayout，列表刷新控件String资源文件 -->
+    <string name="blvl_pull_refresh_hint_str">下拉刷新···</string>
+    <string name="blvl_slide_refresh_hint_str">加载更多···</string>
+    <string name="blvl_clickrefresh_hint_str">数据更新中···</string>
+    <string name="blvl_clickrefresh_text_str">点击刷新</string>
+    <string name="ptr_pull_to_refresh">下拉更新</string>
+    <string name="ptr_release_to_refresh">开始更新</string>
+    <string name="ptr_refreshing">更新中…</string>
+    <string name="ptr_last_updated">最近更新时间: %1$s</string>
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+
+    <!-- 网络请求提示 -->
+    <string name="respones_false">无法连接到服务器,请检查您的网络或者稍后重试</string>
+    <string name="respones_error">无法连接到服务器,请检查您的网络或者稍后重试</string>
+    <string name="net_cannot_use">网络连接不可用</string>
+    <string name="no_network_prompt_str">网络连接不可用</string>
+
+    <!-- 未获取到数据的提示信息 -->
+    <string name="homefragment_msg_nothing_have_get">网络通信异常!</string>
+    <string name="homefragment_click_to_try_again">点击重试</string>
+
+    <!-- 时间选择对话框 -->
+    <string name="timechoose_notime">时段不限</string>
+    <string name="timechoose_sure">确定</string>
+    <string name="timechoose_cancle">取消</string>
+    <string name="clock_time_hint">请选择预订时间</string>
+    <string name="current_selected_time_period_error_str">请选择连续的时间段</string>
+
+    <!-- 增值服务 -->
+    <string name="service_submit">提   交</string>
+    <string name="service_book">服务预订</string>
+    <string name="service_myservice">我的服务</string>
+    <string name="service_time">服务时间</string>
+    <string name="service_address">详细地点</string>
+    <string name="service_place">区域</string>
+    <string name="service_service">服务</string>
+    <string name="service_phone">联系方式</string>
+    <string name="service_address_hint">仅开通科技园</string>
+    <string name="service_phone_hint">请输入手机号</string>
+    <string name="service_phone_number">（热线：0755-26778888）</string>
+    <string name="service_operation_servive">服务</string>
+    <string name="service_operation_doit">接单</string>
+    <string name="service_operation_undoen">退单</string>
+    <string name="service_operation_unsubscribe">退订</string>
+    <string name="service_operation_unsubscribed">已退订</string>
+    <string name="service_operation_over">已结束</string>
+    <string name="back">返  回</string>
+    <string name="service_book_suucess_config">查看我的服务</string>
+    <string name="service_book_suucess_hint">服务已成功提交，会议管理员会尽快与您联系！</string>
+    <string name="service_book_food_fail">获取增值服务失败，请检查网络或者稍后再试！</string>
+    <string name="service_book_place_fail">获取增值服务地区失败，请检查网络或者稍后再试！</string>
+    <string name="service_myself_emtpy">很抱歉，您没有服务</string>
+    <string name="service_admin_neworder">新订单</string>
+    <string name="service_admin_processorder">已接订单</string>
+    <string name="service_admin_doenorder">完成订单</string>
+    <string name="AAAboutStr">关于</string>
+
+    <!-- 意见反馈界面OFA表示OpinionFeedbackActivity -->
+    <string name="OFAOpinionFeedbackStr">意见反馈</string>
+
+    <!-- 用户指南界面UHA表示UserHelperActivity -->
+    <string name="USAUserHelperStr">使用指南</string>
+
+    <!-- 设置界面的fragment  SF表示SetFragment -->
+    <string name="SFVersionStr">当前已是最新版本</string>
+    <string name="SFDialogVersionCancelBtnStr">以后再说</string>
+    <string name="SFDialogVersionSureBtnStr">立即更新</string>
+    <string name="SFDialogExitContentStr">您确定要退出当前账号吗？</string>
+    <string name="SFDialogExitSureBtnStr">确定</string>
+    <string name="SFDialogExitCancelBtnStr">取消</string>
+
+    <!-- 帮助详情界面String资源字段 -->
+    <string name="help_me_detail_back_btn_str">帮助详情</string>
+    <string name="buy_process_title_str">购买流程</string>
+    <string name="reimbursement_guidelines_title_str">还款指南</string>
+
+    <!-- 购物指南布局文件String资源字段 -->
+    <string name="buy_process_terms_1_str">1、注册：下载“易购贷”商城APP，点击快速注册，填写“账号”+“密码”（商城目前只面向中兴通讯集团内部，请输入工号和UDS密码进行验证），进入后填写身份证信息等详细的个人资料，验证通过后就注册成功了。您可以在登录的状态下修改你个人的登录密码。  </string>
+    <string name="buy_process_terms_2_str">2、查找商品：在“首页“菜单中挑选心仪的产品，查看相应的商品信息和分期月供明细。</string>
+    <string name="buy_process_terms_3_str">3、加入购物车：选择心仪的产品加入到购物车内，您可以在线查看并确认消费贷款合同,点击提交订单后，根据合同确认的价格，并支付首期，订单正式生效。</string>
+    <string name="buy_process_terms_4_str">4、查看订单状态：订单首期付款确认后，商城会安排配送货物，收到货物后，请在系统中完成对产品的评价。</string>
+    <string name="buy_process_terms_5_str">5、定期还款：每月按时足额还款。</string>
+    <string name="buy_process_terms_6_str">第六步：每月按时足额还款；</string>
+
+    <!-- 还款指南布局文件String资源字段 -->
+    <string name="reimbursement_guidelines_title1_str">还款操作和您在购物时选择的还款方式有关，目前共有三种方式：</string>
+    <string name="reimbursement_guidelines_one_title_str">还款方式一：工资托收</string>
+    <string name="reimbursement_guidelines_one_terms_1_str">A、“易购贷”商城会与您所在的公司签订代收协议，每月从您的工资中托收当月应还的金额，您不需做任何操作。</string>
+    <string name="reimbursement_guidelines_one_terms_2_str">第二步：点击“我”的功能；</string>
+    <string name="reimbursement_guidelines_one_terms_3_str">第三步：点击“全部订单”；</string>
+    <string name="reimbursement_guidelines_one_terms_4_str">第四步：选择对应订单号；</string>
+    <string name="reimbursement_guidelines_one_terms_5_str">第五步：查看订单详情的“月供详情”；</string>
+    <string name="reimbursement_guidelines_one_terms_6_str">第六步：在要还款的期数后点击 还款 按钮 或点击 提前还款；</string>
+    <string name="reimbursement_guidelines_one_terms_7_str">第七步：确认支付的金额；</string>
+    <string name="reimbursement_guidelines_one_terms_8_str">第八步：选择支付方式还款即可；</string>
+    <string name="reimbursement_guidelines_two_title_str">还款方式二：登录“易贷购”手机商城进行还款</string>
+    <string name="reimbursement_guidelines_two_terms_1_str">A、使用注册的手机号码及密码登陆“易购贷”商城。</string>
+    <string name="reimbursement_guidelines_two_terms_2_str">B、点击“我”的功能，查看“分期中”目录下的订单。</string>
+    <string name="reimbursement_guidelines_two_terms_3_str">C、点击进入需要还款的“订单”，进入“订单详情”后，查看月供的情况，并点击当期需要还款的日期和数额所对应的“支付”按钮。方便、快捷的实现快速还款。</string>
+    <string name="reimbursement_guidelines_three_title_str">还款方式三：提前还款</string>
+    <string name="reimbursement_guidelines_three_terms_1_str">A、 所有“易购贷”商城客户都可以对处于分期中的订单进行“提前还款”，但只能一次性提前还款。</string>
+    <string name="reimbursement_guidelines_three_terms_2_str">注：目前中兴通讯股份有限公司在中国境内按月发放工资的员工，默认的还款方式为工资托收,如希望通过商城主动还款，请在每月工资发放日之前两天登录系统完成付款，当月将不再进行托收。其他子公司员工暂不支持工资托收，每月需要登录商城APP还款，系统在每月到期日来临前会短信通知提醒还款。</string>
+
+    <!-- 帮助界面String资源字段 -->
+    <string name="help_me_back_btn_str">帮助</string>
+    <string name="help_me_phone_text_str">电话咨询</string>
+    <string name="help_me_email_text_title_str">邮件咨询</string>
+    <string name="help_me_email_text_str">0195000100@zte.com.cn</string>
+    <string name="buy_process_text_str">购买流程</string>
+    <string name="reimbursement_guidelines_text_str">还款指南</string>
+    <string name="common_problems_text_str">常见问题</string>
+
+    <!-- 常见问题1为什么选择“易购贷”布局文件String资源字段 -->
+    <string name="common_problems1_title_str">为什么选择“易购贷”？</string>
+    <string name="common_problems1_terms_1_str">1、易购贷”商城由中兴通讯集团财务有限公司全力打造，专注提供消费信贷业务的网上商城。</string>
+    <string name="common_problems1_terms_2_str">2、您可以无需申请信用卡及执行繁杂的审核程序，用全新的购物方式体验购买产品。</string>
+    <string name="common_problems1_terms_3_str">3、产品由京东、中兴手机商城、nubia官网、微品会等主流电商平台直供，保证正品，售后服务有保证。</string>
+    <string name="common_problems1_terms_4_str">4、“易购贷”会逐步提供多样的还款方式供您选择，方便让您灵活安排资金。</string>
+    <string name="common_problems1_terms_5_str">5、“易购贷”商城会持续优化会员激励体系，并不断推出适合客户需要的多品类产品。</string>
+
+    <!-- 常见问题2“易购贷”上的都是正品吗？布局文件String资源字段 -->
+    <string name="common_problems2_title_str">“易购贷”上的都是正品吗？</string>
+    <string name="common_problems2_terms_1_str">1、“易购贷”的网上商品都是第三方知名电商平台直供为主，如京东、中兴手机商城、努比亚商城等，并由其负责配送和售后，且有正规的发票，保证正品，请放心购买。我们的运营会根据第三方平台报价的情况，实时的为客户搜索最具性价比的产品。</string>
+    <string name="common_problems2_terms_2_str">2、在“易购贷”商城上购买的产品，均享受原厂保修、更换、维修和保养的服务，商城将严格按照国家三包政策，针对所售商品履行七天包退，十五天包换等服务。</string>
+
+    <!-- 常见问题3“易购贷”上选择分期购买商品需要提供哪些资料？布局文件String资源字段 -->
+    <string name="common_problems3_title_str">“易购贷”上选择分期购买商品需要提供哪些资料？</string>
+    <string name="common_problems3_terms_1_str">1、您在“易购贷”手机商城上注册过程中，请准确填写注册信息。</string>
+    <string name="common_problems3_terms_2_str">2、下订单时请详细填写收货人的真实姓名、送货地址及联系方式。任何因为填写错误而引起的配送问题，商城将不承担责任。</string>
+    <string name="common_problems3_terms_3_str">3、目前对中兴通讯集团以外的客户暂时不支持注册功能。谢谢！</string>
+
+    <!-- 常见问题4在“易购贷”下单后如何查询物流情况？布局文件String资源字段 -->
+    <string name="common_problems4_title_str">在“易购贷”下单后如何查询物流情况？</string>
+    <string name="common_problems4_terms_1_str">1.您在订单下达后可以在订单详情中查看物流信息。</string>
+    <string name="common_problems4_terms_2_str">2.您也可以根据我们发给您的订单号码，登录第三方平台上去查看物流信息。</string>
+
+    <!-- 常见问题5在“易购贷”下单后，如何执行后期的还款？布局文件String资源字段 -->
+    <string name="common_problems5_title_str">在“易购贷”下单后，如何执行后期的还款？</string>
+    <string name="common_problems5_terms_1_str">1、您在首期款确认支付后，您线上确认的“分期付款合同”立即生效。系统的订单详情中会有详细的还款计划显示，您可以选择登录我们的APP商城进行主动还款，或由商城进行托收还款。详细流程参见“还款指南”。</string>
+
+    <!-- 常见问题6如果还款日没有及时还款，如何解决？布局文件String资源字段 -->
+    <string name="common_problems6_title_str">如果还款日没有及时还款，如何解决？</string>
+    <string name="common_problems6_terms_1_str">1、如果您在还款日没有及时还款，商城会按照应还款金额的一定比例按天收取逾期费用。</string>
+    <string name="common_problems6_terms_2_str">温馨提示：逾期还款对您的信用记录或有影响，也会影响您在商城的信用等级和会员等级。商城保留将您信用情况提供给征信机构的权利。请珍惜您的信用记录。</string>
+
+    <!-- 常见问题7你们对于我的消费情况有没有适当比例的返利？布局文件String资源字段 -->
+    <string name="common_problems7_title_str">商城是否有会员等级和信用机制？</string>
+    <string name="common_problems7_terms_1_str">“易购贷”商城的信用级别共分为3个等级，分别为：A等级，B等级（默认）,C等级。信用等级的升降会根据您的还款期数和逾期次数决定，等级越高，能够享受的贷款额度越高。系统记录到两次逾期还款，会自动把您的信用等级降级。</string>
+    <string name="common_problems7_terms_2_str">“易购贷”商城的会员级别共分为3个等级，分别为：V1等级，V2等级（默认）,V3等级。会员等级的升降会根据您在商城的消费金额和信用等级来决定，等级越高，能够享受的优惠的费率越多。</string>
+
+    <!-- 二期新增 -->
+    <!-- 新增会议简称AM -->
+    <string name="AMVideoTitle">邀请其他会议室一起视频</string>
+    <string name="AMVideoContent">输入会议室终端号，即可邀请参会</string>
+    <string name="AMPhoneTitle">邀请手机好友加入</string>
+    <string name="AMOhoneContent">输入好友手机号或邀请通讯录好友</string>
+    <string name="AMTelePhoneTitle">拨打固定电话加入会议</string>
+    <string name="AMTelePhoneContent">支持公司内线及外线</string>
+    <string name="AMTitleStr">会议控制</string>
+    <string name="AMJoinMeeting">加入会议</string>
+    <string name="AMHintVideo">提示:输入视频终端号码</string>
+    <string name="AMHintPhone">提示:请输入好友手机号码</string>
+    <string name="AMPhonePeople">邀请通讯录好友加入</string>
+    <string name="AMJoinVenue">加入会场</string>
+    <string name="AMHintInfoContent">提示：（仅限国内号码）</string>
+    <string name="AMDomesticInside">内线格式：如075583333</string>
+    <string name="AMAbroadInside">外线格式：区号+固话号码，如075526778954</string>
+    <string name="AMDomesticFXO">国内外线格式：26773333,固话加区号</string>
+    <string name="AMAbroadFXO">国外外线格式：直接输入号码如00852123456789</string>
+    <string name="AMASK">邀请</string>
+    <string name="AMPhoneInfoIsEmpty">电话号码不能为空</string>
+    <string name="NumberFormatInvalid">输入号码格式不正确</string>
+    <string name="AMInfoIsEmpty">添加内容不能为空</string>
+    <string name="loading">数据加载中...</string>
+    <string name="AMJoinPersion">该联系人已经邀请</string>
+    <string name="AMReservations">会议通知</string>
+    <string name="AMUnsubscribe">服务通知</string>
+    <string name="AMRegistration">通知信息</string>
+    <string name="AMHint">提示：</string>
+    <string name="AMInside">邀请公司内线加入</string>
+    <string name="AMInsideInfoDetidl">输入公司内线号码，即可邀请同事参会</string>
+    <string name="AMouter">邀请公司外线加入</string>
+    <string name="AMouterInfoDetidl">输入外线固话、手机号码或邀请手机联系人参会</string>
+    <string name="AMOuterPhoneNumber">请输入外线固话号码或手机号码</string>
+    <string name="AMOuterPhoneNumberHint">（仅支持国内号码）</string>
+    <string name="AMDomesticInsidesdsd">国内内线：城市代码+5位号码，如075583456</string>
+    <string name="AMInternationalInsidecscsc">国际内线：国家代码+城市代码+5位号码</string>
+    <string name="AMExample">如00925181234</string>
+    <string name="AMPermissionADD">您没有权限加入该好友，请重新选择！</string>
+    <string name="AMPermissionNumber">您没有权限加入此号码，请重新输入！</string>
+    <string name="AMPermissionNumberError">手机号码错误，请重新输入！</string>
+    <string name="AMGKNumberError">GK号码错误，无法找到对应会议室，请重新输入！</string>
+    <string name="AMPhoneTel">电话号码错误，请重新输入！</string>
+    <string name="AMNumberError">号码错误，请重新输入!</string>
+    
+    <!-- 签到界面 -->
+    <string name="scan_checkin_resulttext">成功签到</string>
+    <string name="orignizedmeeting">组织的会议</string>
+    <string name="checkedIn">已签到</string>
+    <string name="check">签到</string>
+    <string name="uncheckIn">未签到</string>
+    <string name="have">已有</string>
+    <string name="hadChecked">位参会人\n成功签到</string>
+    <string name="hadCheckedIn">成功签到</string>
+    <string name="checkInTable">签到表</string>
+    <string name="separator">/</string>
+    <string name="ge">个</string>
+    <string name="checkInFailedText">当前会议室没有会议\n您的会议未开始或已结束</string>
+    <string name="MeetingChecked">会议签到</string>
+    <string name="MeetingChecked_fail">签到失败！</string>
+    <string name="MeetingChecked_success">签到成功！</string>
+
+</resources>

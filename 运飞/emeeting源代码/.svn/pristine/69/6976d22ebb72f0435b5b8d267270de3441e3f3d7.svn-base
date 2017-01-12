@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ServeTimeSelectView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView tag="3004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROJ-BY-01l">
+                    <rect key="frame" x="26" y="15" width="138" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="41N-Dg-RXN"/>
+                        <constraint firstAttribute="width" constant="138" id="y9g-94-s1u"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="a1z-3F-pJN"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="fuV-it-XgK"/>
+                    </connections>
+                </pickerView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9Z-6Z-FQQ">
+                    <rect key="frame" x="0.0" y="130" width="160" height="40"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="qGi-7C-pUb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="eGV-p0-bKz"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6eU-BH-WP0">
+                    <rect key="frame" x="160" y="130" width="160" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.58823529411764708" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WWH-tc-rdk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="confirm:" destination="iN0-l3-epB" eventType="touchUpInside" id="gXX-mc-bUh"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Upu-cb-57N">
+                    <rect key="frame" x="26" y="48" width="138" height="1"/>
+                    <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="2l6-lJ-1qH"/>
+                        <constraint firstAttribute="width" constant="138" id="DOG-nd-kp2"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H4d-u2-lff">
+                    <rect key="frame" x="26" y="81" width="138" height="1"/>
+                    <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="138" id="2B2-tw-Nur"/>
+                        <constraint firstAttribute="height" constant="1" id="Jaf-Di-nCD"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aVC-EX-2dq">
+                    <rect key="frame" x="185" y="48" width="70" height="1"/>
+                    <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="hPM-BU-TQV"/>
+                        <constraint firstAttribute="width" constant="70" id="int-4I-JSa"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bll-C1-iQC">
+                    <rect key="frame" x="185" y="81" width="70" height="1"/>
+                    <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="67J-Te-igq"/>
+                        <constraint firstAttribute="width" constant="70" id="nYk-z3-SaR"/>
+                    </constraints>
+                </view>
+                <pickerView tag="3005" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d5H-Hh-b9U">
+                    <rect key="frame" x="185" y="15" width="70" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="DTo-zq-naZ"/>
+                        <constraint firstAttribute="height" constant="100" id="ykL-Ye-A1S"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="Obt-p4-M7V"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="Bhr-Vo-Wui"/>
+                    </connections>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="L9Z-6Z-FQQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5k1-TD-3wE"/>
+                <constraint firstItem="6eU-BH-WP0" firstAttribute="leading" secondItem="L9Z-6Z-FQQ" secondAttribute="trailing" id="6Qg-rt-8Gs"/>
+                <constraint firstItem="Upu-cb-57N" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-65" id="AEF-AM-Kp0"/>
+                <constraint firstItem="aVC-EX-2dq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="48" id="Ap0-uB-ot9"/>
+                <constraint firstItem="ROJ-BY-01l" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="BLt-YK-pFW"/>
+                <constraint firstItem="H4d-u2-lff" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="81" id="D2c-at-Wlu"/>
+                <constraint firstItem="6eU-BH-WP0" firstAttribute="width" secondItem="L9Z-6Z-FQQ" secondAttribute="width" id="Gr4-nd-Yuh"/>
+                <constraint firstAttribute="bottom" secondItem="6eU-BH-WP0" secondAttribute="bottom" id="M1p-0j-la2"/>
+                <constraint firstItem="Bll-C1-iQC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="81" id="S5p-fo-vN6"/>
+                <constraint firstItem="H4d-u2-lff" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-65" id="fjk-tD-thA"/>
+                <constraint firstItem="d5H-Hh-b9U" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="g16-Q3-T8Y"/>
+                <constraint firstItem="ROJ-BY-01l" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-65" id="jOA-PP-Io0"/>
+                <constraint firstItem="Upu-cb-57N" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="48" id="luf-yO-kYg"/>
+                <constraint firstItem="aVC-EX-2dq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="60" id="nd9-oG-gXp"/>
+                <constraint firstAttribute="bottom" secondItem="L9Z-6Z-FQQ" secondAttribute="bottom" id="ntf-Cv-HLe"/>
+                <constraint firstItem="Bll-C1-iQC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="60" id="peY-1c-qir"/>
+                <constraint firstItem="d5H-Hh-b9U" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="60" id="v2G-lR-EMC"/>
+                <constraint firstAttribute="trailing" secondItem="6eU-BH-WP0" secondAttribute="trailing" id="zIF-Bo-a4V"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="serveTimeHSecondPicker" destination="d5H-Hh-b9U" id="wn2-LJ-ipt"/>
+                <outlet property="serveTimeMDayPicker" destination="ROJ-BY-01l" id="tAu-Yk-6Xn"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+    >
+    <LinearLayout  
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:id="@+id/ll_item_lv_meetingbook"
+        >
+        <LinearLayout
+            android:id="@+id/ll_tmp_left"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            >
+            
+            <RelativeLayout 
+                android:layout_height="fill_parent"
+                android:layout_width="70dp"
+                >
+	            <ImageView
+	                android:id="@+id/iv_left_item_mbf_meetinglv"
+	                android:visibility="gone"
+	                android:layout_marginTop="10dp"
+	                android:layout_height="40dp"
+	                android:layout_width="40dp"
+	                android:layout_marginLeft="10dp"
+	                android:layout_marginRight="20dp"
+	                android:src="@drawable/ico_meeting_item"
+	                />
+	            
+	                      
+          <cn.com.zte.emeeting.app.views.CircleBar 
+              android:id="@+id/circlebar_item_mbf_meetinglv"
+              android:layout_height="50dp"
+              android:layout_width="50dp"
+              android:layout_centerInParent="true"
+              />
+            </RelativeLayout>
+            <LinearLayout 
+                android:layout_height="wrap_content"
+                android:layout_width="220dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="15dp"
+                >
+				    <LinearLayout
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_marginTop="15dp"
+				        android:layout_marginBottom="10dp"
+				        android:orientation="horizontal" >
+			
+				        <TextView
+				            android:id="@+id/tv_item_mbf_meetinglv_name"
+				            android:layout_width="fill_parent"
+				            android:layout_height="wrap_content"
+				            android:text="深圳科技园研发楼"
+				            android:textSize="16sp"
+				            android:ems="20"
+				            android:textColor="#01aeff" />
+			
+				        <TextView
+				            android:visibility="gone"
+				            android:id="@+id/tv_item_mbf_meetinglv_no"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="16-01"
+				            android:textSize="16sp"
+				            android:textColor="#01aeff"/>
+				    </LinearLayout>
+			
+				    <LinearLayout
+				        android:layout_marginBottom="15dp"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:gravity="center_vertical"
+				        android:orientation="horizontal" >
+			
+				        <TextView
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="科技园"
+				            android:visibility="gone"
+				            android:textColor="#0af" />
+			
+				        <TextView
+				            android:id="@+id/tv_item_mbf_meetinglv_scale"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:text="10-20人"
+				            android:textSize="12sp"
+				            android:textColor="#666666" />
+				        
+				        <include
+						android:layout_marginLeft="20dp"
+				        android:layout_height="wrap_content"
+				        android:layout_width="wrap_content"
+				        layout="@layout/layout_item_meetingroom_ico"
+				        />
+				    </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        
+
+        
+      
+      <RelativeLayout 
+          android:layout_height="fill_parent"
+          android:layout_width="fill_parent"
+          android:gravity="right"
+          >
+            
+          
+	      <Button
+	          android:id="@+id/btn_mbg_book_meeting"
+	          android:layout_alignParentRight="true"
+	            android:layout_height="fill_parent"
+	            android:layout_width="70dp"
+	            android:text="@string/meeting_book"
+	            android:textSize="16sp"
+	            android:textColor="#ffffff"
+	            android:background="#ff9600"
+	            android:gravity="center"
+	            />
+      </RelativeLayout>
+</LinearLayout>
+
+    <View 
+        android:layout_height="5dp"
+        android:layout_width="fill_parent"
+        android:background="@color/bgcolor_divider_lv"
+        />
+</LinearLayout>

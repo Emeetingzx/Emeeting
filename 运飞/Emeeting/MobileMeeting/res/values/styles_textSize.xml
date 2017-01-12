@@ -1,0 +1,61 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <style name="TopBarFontStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+     <style name="TextSizeStyle_28">
+        <item name="android:textSize">28sp</item>
+    </style>
+    <style name="TextSizeStyle_24">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="TextSizeStyle_22">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="TextSizeStyle_20">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TextSizeStyle_18">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextSizeStyle_16">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TextSizeStyle_13">
+        <item name="android:textSize">13sp</item>
+    </style>
+    
+    <style name="TextSizeStyle_14">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="TextSizeStyle_12">
+        <item name="android:textSize">12sp</item>
+    </style>
+    
+    <style name="TextSizeStyle_10">
+        <item name="android:textSize">10sp</item>
+    </style>
+    
+    <style name="TextSizeStyle_9">
+        <item name="android:textSize">9sp</item>
+    </style>
+    
+    <style name="TextSizeStyle_8">
+        <item name="android:textSize">8sp</item>
+    </style>
+    
+    <style name="TextRoutineStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/AllTextColor</item>
+    </style>
+
+</resources>

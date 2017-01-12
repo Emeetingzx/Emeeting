@@ -1,0 +1,78 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.com.zte.android.pushlient"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DEVICE_POWER"/>
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+
+        <receiver
+            android:name="cn.com.zte.android.pushclient.receiver.PushConnetReceiver"
+            android:exported="true"
+            android:process="cn.com.zte.emp.push.v1" >
+
+            <!-- 系统Action -->
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+
+            <!-- 自定义Action -->
+            <intent-filter>
+                <action android:name="cn.com.zte.emm.push.receiver.action.START" />
+                <action android:name="cn.com.zte.emm.push.receiver.action.STOP" />
+                <action android:name="cn.com.zte.emm.push.receiver.action.RESTART" />
+                <!-- TODO cat -->
+            </intent-filter>
+
+            <!-- 应用卸载Action -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        
+         <!-- EMM配置: 消息推送服务    -建链APP配置 -->
+        <service
+            android:name="cn.com.zte.android.pushclient.service.PushService"
+            android:enabled="true"
+            android:exported="true"
+            android:process="cn.com.zte.emp.push.v1" >
+            <intent-filter android:priority="1000">
+                <action android:name="cn.com.zte.emm.push.service.action.PUSH_SERVICE" />
+
+                <!--  消息推送环境 
+                                                       正式环境：env.pro
+                                                       测试环境：env.test
+                                                       开发环境：env.dev
+                -->
+                <category android:name="env.pro"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

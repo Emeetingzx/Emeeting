@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/meeting_place"
+        style="@style/TextSizeStyle_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_vertical"
+        android:text="@string/tv_meeting_place"
+        android:textColor="@color/SAPlaceTextColor" />
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meeting_place"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/ico_g_place" />
+
+        <TextView
+            android:id="@+id/shake_tv_place"
+            style="@style/TextSizeStyle_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/iv"
+            android:gravity="center_vertical"
+            android:paddingLeft="5dp"
+            android:textColor="@color/SASurePlacetTextColor" />
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/gdvPlace"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:horizontalSpacing="-1dp"
+        android:numColumns="3"
+        android:verticalSpacing="-1dp" />
+
+    <TextView
+        android:id="@+id/meeting_duration"
+        style="@style/TextSizeStyle_16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gdvPlace"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/tv_meeting_time"
+        android:textColor="@color/SAPlaceTextColor" />
+
+    <GridView
+        android:id="@+id/gdvDuration"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/meeting_duration"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:horizontalSpacing="-1dp"
+        android:numColumns="3"
+        android:verticalSpacing="-1dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/gdvDuration"
+        android:layout_marginTop="30dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_cancels"
+            style="@style/TextSizeStyle_16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/PVFJoinNumTextColor"
+            android:text="@string/tv_message_detail_cancel"
+            android:textColor="@color/PVFPreTextColor" />
+
+        <Button
+            android:id="@+id/btn_sure"
+            style="@style/TextSizeStyle_16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/SABgColor"
+            android:text="@string/tv_message_detail_sure"
+            android:textColor="@color/PVFPreTextColor" />
+    </LinearLayout>
+
+</RelativeLayout>

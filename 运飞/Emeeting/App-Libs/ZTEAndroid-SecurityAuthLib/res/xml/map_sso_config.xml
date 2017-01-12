@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map linked="true" >
+    
+    <!-- ####################   基础配置       ####################  -->
+    <!-- MOA包名  -->
+    <entry key="sso_moa_package_name" >com.zte.softda</entry>
+    <!-- 是否开启手势密码  false | true  -->
+    <entry key="sso_open_gusture_lock_flag" >false</entry>
+     
+     
+    <!-- ####################   API服务器配置       ####################  -->
+    <!-- API 服务器是否采用Https协议 false | true  -->
+    <entry key="sso_api_server_https_flag" >false</entry>
+    <!-- API 服务器外网IP  -->
+    <entry key="sso_api_server_ip_outer" >113.98.59.175</entry>
+    <!-- API 服务器内网IP  -->
+    <entry key="sso_api_server_ip_inner" >10.89.208.188</entry>
+    <!-- API 服务器外网端口  -->
+    <entry key="sso_api_server_port_outer" >8080</entry>
+    <!-- API 服务器内网端口  -->
+    <entry key="sso_api_server_port_inner" >80</entry>
+    
+    
+    <!-- ####################   注销设备的浏览器URL地址       ####################  -->
+    <!-- 注销设备的浏览器URL外网地址  -->
+    <entry key="sso_device_unreg_outer_url" >http://zte.com.cn/unreg.do</entry>
+    <!-- 注销设备的浏览器URL内网地址  -->
+    <entry key="sso_device_unreg_inner_url" >http://10.10.10.10/unreg.do</entry>
+</map>

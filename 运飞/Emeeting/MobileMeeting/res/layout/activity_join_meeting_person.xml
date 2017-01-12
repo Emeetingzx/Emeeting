@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <cn.com.zte.emeeting.app.views.TopBar
+        android:id="@+id/join_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </cn.com.zte.emeeting.app.views.TopBar>
+
+    <TextView
+        android:id="@+id/tv_im__add"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/join_topbar"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_meeting_message"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_company_address_book"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_im__add"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_meeting_message"
+        android:gravity="center" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/tv_company_address_book"
+        android:background="@color/gray" />
+
+    <TextView
+        android:id="@+id/tv_already_choose"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/tv_already_choose"
+        android:layout_marginLeft="5dp"
+        android:background="@color/gray" />
+
+    <ListView
+        android:id="@+id/lst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_finish"
+        android:layout_below="@+id/view2" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btn_finish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp" />
+
+</RelativeLayout>

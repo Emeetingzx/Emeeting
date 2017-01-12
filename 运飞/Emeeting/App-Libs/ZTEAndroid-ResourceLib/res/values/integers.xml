@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 一般为具有业务含义的integer -->
+
+    <!-- 最大字符长度 -->
+    <integer name="unquality_input_reason_length">42</integer>
+
+</resources>

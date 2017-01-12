@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/view_list_empty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="很抱歉，您没有服务"
+                android:textColor="@color/textcolor_gray_9"
+                android:textSize="16sp" />
+
+            <LinearLayout 
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/view_list_empty_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                android:id="@+id/view_list_empty_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="点击刷新"
+                android:textColor="@drawable/bgselector_text_refresh"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp" />
+            
+            <ProgressBar 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/view_list_empty_progress"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_marginLeft="10dp"
+                />
+                
+                
+            </LinearLayout>
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

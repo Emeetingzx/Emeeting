@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+	<dimen name="shadow_size">5dip</dimen>
+    <dimen name="table_width">120dp</dimen>
+    <dimen name="table_height">70dp</dimen>
+    <dimen name="marginleft_search_right_list">30dp</dimen>
+    
+       <dimen name="slidingmenu_offset">60dp</dimen>
+    <dimen name="list_padding">10dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+
+    <integer name="num_cols">1</integer>
+    
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">12dp</dimen>
+    
+    <!-- 表盘相关 -->
+    <dimen name="clock_width">18dp</dimen>
+    <dimen name="clock_height">18dp</dimen>
+    <dimen name="clock_item_margin">10dp</dimen>
+    
+    
+    <dimen name="textsize_meeting_default">14sp</dimen>
+    <dimen name="textsize_meeting_big">16sp</dimen>
+    
+</resources>

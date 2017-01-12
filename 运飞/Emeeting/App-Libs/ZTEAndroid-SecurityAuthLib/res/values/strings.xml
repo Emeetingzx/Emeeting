@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">ZTEAndroid-SecurityAuthLib</string>
+    
+    <!-- 登录 -->
+    <string name="login_add_new_device_text">添加</string>
+    <string name="login_unreg_current_device_text">注销</string>
+    <string name="login_text">登录</string>
+    <string name="login_account_text">登录账号:</string>
+    <string name="login_account_text_hint">请输入登录账号</string>
+    <string name="login_password_text">登录密码:</string>
+    <string name="login_password_text_hint">请输入登录密码</string>
+    <string name="login_model_offline_text">离线登陆</string>
+
+</resources>

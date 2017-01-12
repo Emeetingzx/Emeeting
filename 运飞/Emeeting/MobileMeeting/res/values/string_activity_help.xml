@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tv_help">使用指南</string>
+    
+    <string name="tv_help_reserve">预订会议有时间限制吗？</string>
+    <string name="tv_help_shake">如何使用摇一摇预订会议？</string>
+    <string name="tv_help_phone">如何预订电话和视频会议桥？</string>
+    <string name="tv_help_add">如何预订增值服务？</string>
+    
+    <string name="tv_help_reserve_detail">每日0:00至8:20不提供会议预订服务。</string>
+    <string name="tv_help_shake_detail">摇一摇可以预订接下来整点或半点开始的一小时会议，会议地点为手机当前定位地点。\n\n您也可以点击右上角的筛选图标，选择大楼和时长预订。</string>
+    <string name="tv_help_phone_detail">         可通过左侧菜单进入电话/视频会议桥预订界面，预订电话会议桥或视频会议桥。预订成功后可在我的会议—我预订的 界面查看会议详情。\n\n
+         电话会议桥可通过手机、座机或PC电话接入，会议开始后，拨打接入号码，按语音提示输入会议编号和密码即可接入电话会议。\n\n
+         视频会议桥通过会议终端呼入，只需输入接入号码，即可自主接入视频会议【如在公用会议室呼入，记得另行预订会议室】。</string>
+    <string name="tv_help_add_detail">可通过左侧菜单进入增值服务界面，预订增值服务，预订成功后，会有服务人员联系您确认订单。
+</string>
+
+</resources>

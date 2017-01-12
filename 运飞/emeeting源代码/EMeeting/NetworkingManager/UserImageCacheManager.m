@@ -1,0 +1,72 @@
+//
+//  UserImageCacheManager.m
+//  RedPacket
+//
+//  Created by itp on 15/12/18.
+//  Copyright © 2015年 itp. All rights reserved.
+//
+
+#import "UserImageCacheManager.h"
+#import "NetworkingManager.h"
+#import "UIImageView+EMMFileCache.h"
+
+@implementation UserImageCacheManager
+
++ (void)loadHeaderImageWithUID:(NSString *)uid placeholder:(NSString *)placeholder imageView:(UIImageView *)imageView
+{
+    if (uid.length == 0)
+    {
+        imageView.image = [UIImage imageNamed:placeholder];
+        return;
+    }
+    //NetworkingManager *manager = [NetworkingManager share];
+    NSString *spath=[NSString stringWithFormat:@"http://mdm.zte.com.cn:80/redpacketnew/moa/services.dssm?U=%@",uid];
+    spath=[spath stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSURL *url = [NSURL URLWithString:spath];
+    [imageView emm_setImageWithURL:url placeholderImage:[UIImage imageNamed:placeholder]];
+}
+
++ (void)loadHeaderImageWithUrl:(NSString *)imageurl placeholder:(NSString *)placeholder imageView:(UIImageView *)imageView
+{
+    if (imageurl.length == 0)
+    {
+        imageView.image = [UIImage imageNamed:placeholder];
+        return;
+    }
+    NetworkingManager *manager = [NetworkingManager share];
+    //NSString *spath=[NSString stringWithFormat:@"%@",uid];
+    imageurl=[imageurl stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    NSURL *url = [NSURL URLWithString:imageurl relativeToURL:[manager.httpManager currentNetworkingBaseUrl]];
+    [imageView emm_setImageWithURL:url placeholderImage:[UIImage imageNamed:placeholder]];
+}
+
++ (void)loadGiftImageWithGiftUrl:(NSString *)giftUrl placeholder:(NSString *)placeholder imageView:(UIImageView *)imageView completionBlock:(void (^)(BOOL))completionBlock
+{
+    if (giftUrl.length == 0)
+    {
+        imageView.image = [UIImage imageNamed:placeholder];
+        if (completionBlock)
+        {
+            completionBlock(NO);
+        }
+        return;
+    }
+    NetworkingManager *manager = [NetworkingManager share];
+    NSString *gpath = [NSString stringWithFormat:@"http://120.77.72.167:80/emeeting//redpacketnew/moa/services.dssm?U=%@",giftUrl];
+    NSURL *url = [NSURL URLWithString:gpath relativeToURL:[manager.httpManager currentNetworkingBaseUrl]];
+        
+    [imageView emm_setImageWithURL:url placeholderImage:[UIImage imageNamed:placeholder] completed:^(NSData *fileData, NSError *error, EMMFileCacheType cacheType, BOOL finished, NSURL *imageURL) {
+        BOOL success = NO;
+        if (finished && fileData)
+        {
+            success = YES;
+        }
+        
+        if (completionBlock) {
+            completionBlock(success);
+        }
+        
+    }];
+}
+
+@end

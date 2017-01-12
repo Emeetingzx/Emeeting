@@ -1,0 +1,137 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/home_bottom"
+            android:id="@+id/home_content_layout"></FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/home_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp" >
+
+            <RelativeLayout
+                android:id="@+id/getmeet_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/public_background_image" >
+
+                <ImageView
+                    android:id="@+id/home_page_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ico_logo" />
+
+                <TextView
+                    android:id="@+id/home_page_text"
+                    style="@style/TextSizeStyle_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_page_img"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/home_bot_getMeet"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+          
+
+            <RelativeLayout
+                android:id="@+id/shake_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/public_background_image" >
+
+                <ImageView
+                    android:id="@+id/shake_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ico_logo" />
+
+                <TextView
+                    android:id="@+id/shake_text"
+                    style="@style/TextSizeStyle_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/shake_img"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/home_bot_shake"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/me_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/public_background_image" >
+
+                <ImageView
+                    android:id="@+id/me_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ico_logo" />
+
+                <TextView
+                    android:id="@+id/me_text"
+                    style="@style/TextSizeStyle_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/me_img"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/home_bot_me"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+            
+              <RelativeLayout
+                android:id="@+id/set_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/public_background_image" >
+
+                <ImageView
+                    android:id="@+id/set_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/ico_logo" />
+
+                <TextView
+                    android:id="@+id/set_text"
+                    style="@style/TextSizeStyle_14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/set_img"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/setting_str"
+                 android:textColor="@color/white" />
+            </RelativeLayout>
+            
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

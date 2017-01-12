@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#80000000"
+    android:orientation="vertical" >
+
+    <cn.com.zte.emeeting.app.views.TopBar
+        android:id="@+id/find_meeting_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#80000000" >
+    </cn.com.zte.emeeting.app.views.TopBar>
+
+    <LinearLayout
+        android:id="@+id/linear_have_room"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:background="#80000000"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_meeting_room_num"
+            style="@style/TextSizeStyle_16"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/SADialogBgColor"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:textColor="@color/PVFContentTextColor" />
+
+        <ListView
+            android:id="@+id/lst_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:divider="@color/SADialogBgColor" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

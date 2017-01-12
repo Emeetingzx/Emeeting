@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgcolor_filter_divider_f9"
+    android:orientation="vertical" >
+    <include
+        layout="@layout/view_pulllistview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+	<cn.com.zte.emeeting.app.views.ViewListEmpty 
+        android:visibility="gone"
+        android:layout_marginTop="130dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/emptyview_lv_empty"
+        />
+</LinearLayout>

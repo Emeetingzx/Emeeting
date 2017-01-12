@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/common_body_style"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <cn.com.zte.emeeting.app.views.TopBar
+        android:id="@+id/calendar_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/root_calendar_layout_id"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/root_week_layout_id"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/common_week_background_color"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <TextView
+                style="@style/weekName"
+                android:text="日" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="一" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="二" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="三" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="四" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="五" />
+
+            <TextView
+                style="@style/weekName"
+                android:text="六" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <ViewFlipper
+                android:id="@+id/flipper"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/white" >
+            </ViewFlipper>
+            <cn.com.zte.emeeting.app.views.ViewCalenderPrompt 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/calender_prompt"
+                android:visibility="gone"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

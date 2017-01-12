@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 公共 -->
+    <string name="error_client_event_error_common_msg">系统异常(Client Event)</string>
+    <string name="error_client_common_msg">系统异常(client)</string>
+    <string name="error_server_common_msg">系统异常(server)</string>
+    <string name="error_function_dev_ing">该功能开发中,敬请期待.</string>
+    <string name="error_setting_address_is_empty">服务器地址不能为空.</string>
+    <string name="error_setting_address_is_not_valid">服务器地址格式错误.</string>
+    <string name="error_setting_address_update_success">服务器地址设置成功.</string>
+    <string name="error_setting_print_address_update_success">打印机设置成功.</string>
+    <string name="info_db_save_success">数据保存成功!</string>
+    <string name="info_no_more_data">数据全部加载完毕!</string>
+    <string name="error_version_check_failed">版本信息检查失败,请重试.</string>
+    <string name="warn_invalid_qty_input">请输入合法的数量!</string>
+    <string name="info_common_opr_success">操作成功</string>
+    <string name="info_common_logon_out_yes_or_no">是否确认退出登录?</string>
+    <string name="info_common_sucess">成功</string>
+    <string name="error_common_login_failed">登陆失败,请确认账号或密码是否正确</string>
+    <string name="error_zxing_scan_result_too_short">扫描的条码数据格式有误,请确认.</string>
+
+    <!-- SSO -->
+    <string name="warn_sso_auth_hint_add_device_or_unreg_device">系统检测到新设备,请添加新设备或注销已有设备!</string>
+    <string name="error_sso_common_code">sso_001c</string>
+     <string name="error_sso_common_msg">单点登陆失败</string>
+    
+    <!-- 登录 -->
+    <string name="info_login_out_hint">是否确认退出应用?</string>
+    <string name="error_login_failed">登录失败</string>
+    <string name="error_auto_login_failed_empty_acc_or_psw">自动登录失败,登录账号或登录密码为空</string>
+    <string name="error_login_failed_acc_is_empty">账号不能为空</string>
+    <string name="error_login_failed_pwd_is_empty">密码不能为空</string>
+
+    <!-- DB -->
+    <string name="warn_db_query_error">数据查询失败,请确认!</string>
+    <string name="warn_db_save_error">数据保存失败,请确认!</string>
+    <string name="warn_db_delete_error">数据删除失败,请确认!</string>
+    <string name="warn_db_update_error">数据更新失败,请确认!</string>
+
+</resources>

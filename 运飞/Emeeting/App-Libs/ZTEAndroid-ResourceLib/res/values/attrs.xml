@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DatePicker">
+        <attr name="calendarViewShown" format="boolean" />
+        <attr name="defaultToday" format="boolean" />
+        <attr name="defaultCurrentTime" format="boolean" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.com.zte.android.widget.pattern"
+    android:versionCode="1"
+    android:versionName="1.0.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+
+    <application
+        android:icon="@drawable/ic_launcher01"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cn.com.zte.android.widget.lockpattern.pattern.UnlockGesturePasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.android.widget.lockpattern.pattern.CreateGesturePasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.com.zte.android.widget.lockpattern.pattern.GuideGesturePasswordActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="cn.com.zte.android.widget.lockpattern.activity.SettingActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 登录界面设置选项列表key -->
+    <integer-array name="login_setting_keys">
+        <item>1</item>
+    </integer-array>
+
+    <!-- 登录界面设置选项列表Value -->
+    <string-array name="login_setting_values">
+        <item>@string/common_download_text</item>
+    </string-array>
+
+    <!-- 管理人员主界面设置选项列表key -->
+    <integer-array name="main_setting_keys_manager">
+        <item>1</item>
+        <item>2</item>
+        <!-- <item>3</item> -->
+        <item>4</item>
+    </integer-array>
+
+    <!-- 管理人员主界面设置选项列表Value -->
+    <string-array name="main_setting_values_manager">
+        <item>@string/common_download_text</item>
+    </string-array>
+
+    <!-- 主界面菜单图标 -->
+    <integer-array name="main_menu_icons">
+        <item>@drawable/btn_back</item>
+    </integer-array>
+
+    <!-- 主界面菜单文字 -->
+    <string-array name="main_menu_titles">
+        <item>测试</item>
+    </string-array>
+    
+    <!-- 语音过滤关键字文本 -->
+    <string-array name="filter_text_for_speech">
+        <item>weblogic.transaction.RollbackException</item>
+        <item>webservice</item>
+        <item>jta transaction</item>
+    </string-array>
+
+</resources>

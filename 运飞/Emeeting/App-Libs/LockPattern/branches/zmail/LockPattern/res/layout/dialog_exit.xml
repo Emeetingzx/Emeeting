@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_fragment_set"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dialog_tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/red"
+        android:textSize="23sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/dialog_tv_content"
+        android:textSize="16sp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:textColor="@color/SFMessageTextColor" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/SFLineBgColor" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/dialog_btn_cancel"
+            android:textSize="16sp"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="10dp"
+            android:textColor="@color/SFUpdateVersionDialogLeftTextColor" />
+
+        <TextView
+            android:id="@+id/dialog_line"
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="@color/SFLineBgColor" />
+
+        <Button
+            android:id="@+id/dialog_btn_sure"
+            android:textSize="16sp"
+             android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@null"
+            android:padding="10dp"
+            android:textColor="@color/SFUpdateVersionDialogRightTextColor" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip"
+    android:orientation="vertical" >
+    <ImageView
+		android:id="@+id/iv_checkin_head"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:scaleType="centerCrop"
+		android:layout_marginLeft="7dip"
+		android:layout_centerVertical="true"
+		android:src="@drawable/icon_default_user" />
+    
+    <TextView 
+        android:id="@+id/tv_checkin_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_marginTop="8dip"
+        android:layout_toRightOf="@+id/iv_checkin_head"
+        android:textSize="14sp"
+        android:textColor="#000"/>
+    
+    <TextView 
+        android:id="@+id/tv_checkin_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_checkin_name"
+        android:layout_marginTop="5dip"
+        android:layout_alignLeft="@+id/tv_checkin_name"
+        android:textSize="12sp"
+        android:textColor="#7a7a7a"/>
+
+    <Button
+        android:id="@+id/btn_checkin_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="#FFFFFF"
+        android:textColor="#E29B33"
+        android:textSize="15sp" />
+    
+</RelativeLayout>

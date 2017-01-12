@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <solid android:color="@color/tab_row_left_bg_2_color" />
+
+    <corners
+        android:bottomLeftRadius="@dimen/common_dp_8"
+        android:topLeftRadius="@dimen/common_dp_8" />
+
+    <stroke
+        android:width="@dimen/common_dp_1"
+        android:color="@color/tab_row_left_bg_2_color" />
+
+</shape>

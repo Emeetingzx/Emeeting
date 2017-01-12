@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 版本信息检测 -->
+    <string name="client_version_new_version_title_text">版本升级</string>
+    <string name="client_version_new_version_number_head_text">版本号:</string>
+    <string name="client_version_new_version_content_head_text">版本特性:</string>
+    <string name="client_version_do_update_text">立刻升级</string>
+    <string name="client_version_cencel_update_text">下次再说</string>
+
+    <!-- 登录 -->
+    <string name="login_add_new_device_text">添加</string>
+    <string name="login_unreg_current_device_text">注销</string>
+    <string name="login_text">登录</string>
+    <string name="login_account_text">登录账号:</string>
+    <string name="login_account_text_hint">请输入登录账号</string>
+    <string name="login_password_text">登录密码:</string>
+    <string name="login_password_text_hint">请输入登录密码</string>
+    <string name="login_model_offline_text">离线登陆</string>
+
+    <!-- 摄像头 -->
+    <string name="camera_standard">标准</string>
+    <string name="camera_ffc">前置摄像头</string>
+    <string name="camera_record">录制视频</string>
+    <string name="camera_stop">停止</string>
+    <string name="camera_lock_to_landscape">强制横屏</string>
+    <string name="camera_launch_camera_app">运行拍照软件</string>
+    <string name="camera_take_picture">拍照</string>
+    <string name="camera_auto_focus">自动对焦</string>
+    <string name="camera_single_shot_mode">单拍模式</string>
+    <string name="camera_no_image">没有图片可以显示</string>
+
+    <!-- 进度框 -->
+    <string name="dialog_title_info">提示</string>
+    <string name="dialog_title_info_downloading">正在下载...</string>
+
+    <!-- 登录界面 -->
+    <string name="login_password_hint_text">请输入密码</string>
+    <string name="login_username_hint_text">请输入用户名</string>
+    <string name="login_rember_text">记住密码</string>
+    <string name="login_autologin_text">自动登录</string>
+    <string name="login_loginbtn_text">   登      录     </string>
+    <string name="login_autoLog_fail">自动登录失败，请重新登录</string>
+    <string name="login_autoLog_succes">自动登录成功</string>
+    <string name="logout_title">退出系统</string>
+    <string name="logout_tips_message">您确定要退出系统吗?</string>
+    <string name="current_version">当前版本:</string>
+    <string name="app_name">ZTE</string>
+
+
+</resources>

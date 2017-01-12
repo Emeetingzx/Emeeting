@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:textSize">@dimen/textsize_20</item>
+    </style>
+
+    <!-- Application theme  ActionBar. -->
+    <style name="AppThemeNoActionBar" parent="AppTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Animations" />
+
+    <!-- PopDownMenu -->
+    <style name="Animations.PopDownMenu" />
+
+    <style name="Animations.PopDownMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/anim_grow_from_topleft_to_bottomright</item>
+        <item name="@android:windowExitAnimation">@anim/anim_shrink_from_bottomright_to_topleft</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/anim_grow_from_topright_to_bottomleft</item>
+        <item name="@android:windowExitAnimation">@anim/anim_shrink_from_bottomleft_to_topright</item>
+    </style>
+
+    <style name="login_view">
+        <item name="android:layout_marginLeft">0dip</item>
+        <item name="android:layout_marginRight">0dip</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:layout_marginBottom">5dip</item>
+        <item name="android:background">@drawable/selector_edittext</item>
+    </style>
+
+    <style name="Animations.PopDownMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/anim_grow_from_top</item>
+        <item name="@android:windowExitAnimation">@anim/anim_shrink_from_bottom</item>
+    </style>
+
+    <style name="AnimationFade">
+
+        <!-- PopupWindow左右弹出的效果 -->
+        <item name="android:windowEnterAnimation">@anim/anim_in_lefttoright</item>
+        <item name="android:windowExitAnimation">@anim/anim_out_lefttoright</item>
+    </style>
+
+    <!-- PopUpMenu -->
+    <style name="Animations.PopUpMenu" />
+
+    <style name="Animations.PopUpMenu.Left">
+        <item name="@android:windowEnterAnimation">@anim/anim_grow_from_bottomleft_to_topright</item>
+        <item name="@android:windowExitAnimation">@anim/anim_shrink_from_topright_to_bottomleft</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Right">
+        <item name="@android:windowEnterAnimation">@anim/anim_grow_from_bottomright_to_topleft</item>
+        <item name="@android:windowExitAnimation">@anim/anim_shrink_from_topleft_to_bottomright</item>
+    </style>
+
+    <style name="Animations.PopUpMenu.Center">
+        <item name="@android:windowEnterAnimation">@anim/anim_grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/anim_shrink_from_top</item>
+    </style>
+
+    <!-- listview -->
+    <style name="ListView"></style>
+
+    <style name="ListView.EmptyView"></style>
+
+    <style name="ListView.EmptyView.TextView">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ListView.Item"></style>
+
+    <style name="ListView.Item.ImageButton"></style>
+
+    <style name="ListView.Item.TextView">
+        <item name="android:layout_marginLeft">0dip</item>
+        <item name="android:layout_marginRight">0dip</item>
+        <item name="android:layout_marginTop">0dip</item>
+        <item name="android:layout_marginBottom">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="ListView.Item.TextView.Title">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginLeft">10dip</item>
+        <item name="android:layout_marginRight">0dip</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:layout_marginBottom">5dip</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ActionBar"></style>
+
+    <style name="ActionBar.ImageView">
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- 自定义键盘 -->
+
+    <style name="PopupAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_popup_keyboard_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_popup_keyboard_exit</item>
+    </style>
+
+    <!-- Dialog中底部操作相关按钮 -->
+    <style name="Dialog_Bottom_Button">
+        <item name="android:textSize">@dimen/textsize_22</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- 表格中按钮 -->
+    <style name="Table_Row_Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Dialog_Title">
+        <item name="android:background">@color/bg_dialog_title</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/textsize_20</item>
+    </style>
+
+    <style name="ThemeDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是悬浮还是覆盖 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 是否有系统自带标题栏 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 背景是否变暗 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 去除黑色背景 -->
+    </style>
+
+    <!-- quickaction 默认样式 -->
+    <style name="QuickactionDefaultAnim">
+        <item name="android:windowEnterAnimation">@android:anim/fade_in</item>
+        <item name="android:windowExitAnimation">@android:anim/fade_out</item>
+    </style>
+
+    <!-- quickaction 展开收缩样式 -->
+    <style name="QuickactionGrowAnim">
+        <item name="android:windowEnterAnimation">@anim/anim_grow_from_top</item>
+        <item name="android:windowExitAnimation">@anim/anim_shrink_from_bottom</item>
+    </style>
+
+    <!-- Table Head TextView -->
+    <style name="TableHeadTextView">
+        <item name="android:textColor">@color/tab_head_text_color</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- Table Content TextView Center Galaxy -->
+    <style name="TableContentTextViewCenter">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:layout_marginLeft">@dimen/layout_margin_left_5</item>
+        <item name="android:layout_marginRight">@dimen/layout_margin_right_5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/tab_row_content_text_color</item>
+    </style>
+
+    <!-- Table Content TextView Center Left -->
+    <style name="TableContentTextViewLeft" parent="TableContentTextViewCenter">
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <!-- login edittext 样式 -->
+    <style name="LoginEditText">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/textsize_30</item>
+        <item name="android:background">@null</item>
+    </style>
+    
+     <style name="TransparentNoFullscreen">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+    <style name="Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowAnimationStyle">@+android:style/Animation.Translucent</item>
+    </style>
+
+</resources>

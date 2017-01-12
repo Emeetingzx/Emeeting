@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_corners"
+    android:gravity="center_horizontal"
+    android:minHeight="@dimen/min_height_680"
+    android:minWidth="@dimen/min_width_705"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="@dimen/layout_width_705"
+        android:layout_height="@dimen/layout_height_550" >
+
+        <ImageView
+            android:id="@+id/iv_photo"
+            android:layout_width="@dimen/layout_width_650"
+            android:layout_height="@dimen/layout_height_490"
+            android:layout_centerInParent="true" >
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/layout_width_580"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_top_30" >
+
+        <Button
+            android:id="@+id/btn_close"
+            style="@style/Dialog_Bottom_Button"
+            android:layout_width="@dimen/layout_width_300"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/layout_margin_left_50"
+            android:background="@drawable/selector_btn_confirm_big"
+            android:text="@string/common_close" />
+    </RelativeLayout>
+
+</LinearLayout>

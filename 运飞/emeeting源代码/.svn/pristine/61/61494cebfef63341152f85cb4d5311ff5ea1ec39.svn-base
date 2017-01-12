@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Shake Result View Controller-->
+        <scene sceneID="GQH-ZP-VkK">
+            <objects>
+                <viewController storyboardIdentifier="ShakeResultViewController" id="XzI-Zm-nh7" customClass="ShakeResultViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0y2-y0-2KL"/>
+                        <viewControllerLayoutGuide type="bottom" id="IGa-oS-LbD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hd0-6D-wCh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqS-lb-IgO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back.png" translatesAutoresizingMaskIntoConstraints="NO" id="5px-0a-bIm">
+                                        <rect key="frame" x="5" y="29" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="S1i-Xd-FHV"/>
+                                            <constraint firstAttribute="width" constant="30" id="YdL-mt-eZd"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.16078431372549018" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5px-0a-bIm" firstAttribute="top" secondItem="tqS-lb-IgO" secondAttribute="top" constant="29" id="99a-9y-jeN"/>
+                                    <constraint firstAttribute="height" constant="68" id="H2N-qO-qFf"/>
+                                    <constraint firstItem="5px-0a-bIm" firstAttribute="leading" secondItem="tqS-lb-IgO" secondAttribute="leading" constant="5" id="TGZ-1R-i9O"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shake_background.png" translatesAutoresizingMaskIntoConstraints="NO" id="4P2-Vs-0Ko">
+                                <rect key="frame" x="87" y="234" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="3r1-BD-J6F"/>
+                                    <constraint firstAttribute="height" constant="200" id="ajq-10-rU5"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tqS-lb-IgO" firstAttribute="leading" secondItem="hd0-6D-wCh" secondAttribute="leading" id="1qq-1z-NoY"/>
+                            <constraint firstItem="4P2-Vs-0Ko" firstAttribute="centerY" secondItem="hd0-6D-wCh" secondAttribute="centerY" id="5PO-FG-Dxt"/>
+                            <constraint firstAttribute="trailing" secondItem="tqS-lb-IgO" secondAttribute="trailing" id="73u-zL-nbO"/>
+                            <constraint firstItem="4P2-Vs-0Ko" firstAttribute="centerX" secondItem="hd0-6D-wCh" secondAttribute="centerX" id="Smd-iy-ZAk"/>
+                            <constraint firstItem="tqS-lb-IgO" firstAttribute="top" secondItem="hd0-6D-wCh" secondAttribute="top" id="syw-Ah-1Z3"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uzz-Yw-2o6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713.5" y="394.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back.png" width="26" height="26"/>
+        <image name="shake_background.png" width="300" height="300"/>
+    </resources>
+</document>

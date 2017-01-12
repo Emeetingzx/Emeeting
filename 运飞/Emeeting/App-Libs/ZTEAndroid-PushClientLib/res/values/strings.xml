@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">ZTEAndroid-PushClientLib</string>
+    <string name="push_success_msg">推送成功</string>
+    <string name="push_error_invalid_user_app">推送失败，用户校验失败</string>
+    <string name="push_error_need_install_app">推送失败，应用未安装</string>
+    <string name="push_error_invalid_reg_status">推送失败，应用注册状态异常</string>
+
+</resources>

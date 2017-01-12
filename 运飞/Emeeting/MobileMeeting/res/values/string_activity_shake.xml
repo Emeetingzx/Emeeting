@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tv_meeting_place">会议地点</string>
+    <string name="tv_meeting_time">会议时间</string>
+    <string name="tv_btn_sure">确定</string>
+    <string name="tv_shake_shake1">摇一摇，秒杀当下1小时会议室</string>
+    <string name="tv_shake_shake2">摇一摇，秒杀当下2小时会议室</string>
+    <string name="tv_shake_shake3">摇一摇，秒杀当下3小时会议室</string>
+     
+     <string name="tv_shake_time_one">1小时</string>
+     <string name="tv_shake_time_two">2小时</string>
+     <string name="tv_shake_time_three">3小时</string>
+     <string name="tv_shake_no_net">网络连接异常，请打开WLAN或移动数据</string>
+     <string name="tv_shake_shake_one">摇一摇</string>
+     <string name="tv_shake_no_have_room">附近没有会议室</string>
+     
+     <string name="tv_service_error">服务器异常</string>
+     <string name="tv_netword_error">网络连接异常</string>
+    
+     <string name="tv_shake_do_not_location">无法获取您的位置信息,请打开GPS或移动数据</string>
+</resources>

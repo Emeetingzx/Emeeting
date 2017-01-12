@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="tv_findroom_shake_one">恭喜您!摇出一个会议室</string>
+   <string name="tv_findroom_shake_two">恭喜您!摇出二个会议室</string>
+   <string name="tv_findroom_shake_three">恭喜您!摇出三个会议室</string>
+   <string name="tv_findroom_no_have_message">没有获取到更多会议室信息</string>
+   <string name="tv_findroom_do_not_shake">很抱歉，20:00至次日8:20之间无法使用摇一摇！</string>
+   <string name="tv_findroom_do_filt_one">请输入条件后重新尝试，最多可以预订</string>
+   <string name="tv_findroom_do_filt_two">小时的会议!</string>
+  
+   <string name="tv_findroom_do_reserve">预订</string>
+   <string name="tv_findroom_do_choose">所选会议时间不连续，请重新选择</string>
+   <string name="tv_findroom_do_please_choose">请选择会议时间段</string>
+   <string name="tv_findroom_do_start_end_time">开始时间必须晚于当前时间,请重新选择预订时间</string>
+   <string name="tv_findroom_do_out_time">该会议时间已过期，请重新摇!</string>
+   
+   <string name="tv_findroom_no_find">未能找到会议室，请输入条件后重新尝试！</string>
+   <string name="tv_findroom_now_find">正在寻找会议室...</string>
+       
+</resources>

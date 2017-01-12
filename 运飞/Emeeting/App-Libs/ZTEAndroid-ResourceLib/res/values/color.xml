@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="tabgray">#7c7c7c</color>
+    <color name="gray">#a0a0a0</color>
+    <color name="gray_title">#202020</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="listviewitem">#AAAAAA</color>
+    <color name="zebraline">#90D0D0D0</color>
+    <color name="alert_black">#404040</color>
+    <color name="gold">#ceb956</color>
+    <color name="change">#40000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="red">#ff0000</color>
+    <color name="Brown">#68442d</color>
+    <color name="blue">#0000FF</color>
+    <color name="orange">#FF8000</color>
+    <color name="green">#34DE01</color>
+    <color name="button2">#EB7E86</color>
+    <color name="transparent_00">#00000000</color>
+    <color name="bgcolor_for_query">#EFEFEF</color>
+    <color name="title_color">#5CA0C9</color>
+    <color name="navi_item_color">#A9C9E0</color>
+    <color name="btn_blue">#009DDA</color>
+    <color name="btn_selected_orange">#FF7029</color>
+    <color name="btn_selected_blue">#5179DE</color>
+    <color name="btn_selected_green">#8DCA34</color>
+    <color name="bg_dialog_body">#F2F5FA</color>
+    <color name="bg_dialog_title">#BBC6CC</color>
+    <color name="dialog_content_title">#B2B8BD</color>
+
+    <!-- 橙色边框 -->
+    <color name="bg_selected_orange">#FF7029</color>
+
+    <!-- 登录界面文本控件字体颜色颜色 -->
+    <color name="like_black_color">#323542</color>
+
+    <!-- 灰色大背景 -->
+    <color name="common_bg_gray_container">#C0C3D1</color>
+
+    <!-- 绿色大背景 -->
+    <color name="common_bg_green_container">#8DCA34</color>
+
+    <!-- 橙色大背景 -->
+    <color name="common_bg_orange_container">#DA972B</color>
+
+    <!-- 绿色 -->
+    <color name="common_green">#8DCA34</color>
+
+    <!-- 浅灰色 -->
+    <color name="common_lite_gray">#DDCCCCCC</color>
+
+    <!-- 浅绿色-按钮背景 -->
+    <color name="common_btn_green">#00b37e</color>
+
+    <!-- 浅绿色 -->
+    <color name="common_lite_green">#F1F8E2</color>
+
+    <!-- 类似红色 -->
+    <color name="common_like_red">#FF702A</color>
+
+    <!-- 橙色 -->
+    <color name="common_orange">#DA972B</color>
+
+    <!-- 灰色 -->
+    <color name="common_gray">#9E9E9E</color>
+
+    <!-- 灰色字体颜色 -->
+    <color name="common_text_gray">#B0BABF</color>
+
+    <!-- 灰色大背景内子容器背景色 -->
+    <color name="bg_issue_req_item_sub_barcode_container">#E6E9ED</color>
+
+    <!-- 灰色未激活颜色 -->
+    <color name="common_text_gray_un_active">#BBC6CC</color>
+
+    <!-- 浅灰 -->
+    <color name="common_text_gray_lite">#A0A8AD</color>
+
+    <!-- quick action -->
+    <color name="quick_action_border">#FF7029</color>
+    <color name="quick_action_top_main_menu_border">#FF7029</color>
+    <color name="quick_action_item_bg_selected">#FF7029</color>
+    <color name="quick_action_top_main_menu_item_bg_selected">#8DCA34</color>
+    <color name="quick_action_item_text_color_un_selected">#5B5D66</color>
+    <color name="quick_action_item_text_color_selected">#FFFFFF</color>
+    <color name="quick_action_bg">#FDFDFD</color>
+
+    <!-- 虚线颜色 -->
+    <color name="dot_line_color">#D5D5D5</color>
+
+    <!-- 灰色线颜色 -->
+    <color name="gray_line_color">#BBC6CC</color>
+
+    <!-- 绿色边框颜色 -->
+    <color name="coner_green_color">#8DCA34</color>
+
+    <!-- 菜单激活文本颜色 -->
+    <color name="menu_text_active_color">#FFFFFF</color>
+
+    <!-- 菜单未激活文本颜色 -->
+    <color name="menu_text_normal_color">#BDC3C7</color>
+
+    <!-- 顶部菜单 -->
+    <color name="menu_bottom_color">#8DCA34</color>
+    <color name="menu_normal_color">#282A32</color>
+
+    <!-- 相机边框 -->
+    <color name="camera_conner_color">#8DCA34</color>
+
+    <!-- 主背景 -->
+    <color name="bg_body">#F3F5FA</color>
+
+    <!-- 顶部菜单背景 -->
+    <color name="bg_top_menu">#313441</color>
+
+    <!-- 顶部扫描框 -->
+    <color name="bg_top_scan_textview">#BDC3C7</color>
+
+    <!-- 灰色 -->
+    <color name="bg_gray_color">#9E9E9E</color>
+
+    <!-- 橙色 -->
+    <color name="text_orange">#FB7E67</color>
+
+    <!-- check box 按钮默认填充颜色 -->
+    <color name="bg_checkbox_color">#FCFCFC</color>
+
+    <!-- grid view item 默认填充颜色 -->
+    <color name="bg_grid_view_item_color">#FCFCFC</color>
+
+    <!-- grid view item 默认填充选中颜色 -->
+    <color name="bg_grid_view_item_selected_color">#5179DE</color>
+
+    <!-- table -->
+    <!-- 表头文本颜色 -->
+    <color name="tab_head_text_color">#FFFFFF</color>
+    <color name="tab_row_header_bg_color">#9E9E9E</color>
+    <color name="tab_row_left_bg_0_color">#BBC6CC</color>
+    <color name="tab_row_left_bg_1_color">#00BFDD</color>
+    <color name="tab_row_left_bg_2_color">#DA972B</color>
+    <color name="tab_row_content_bg_color">#FDFDFD</color>
+    <color name="tab_row_content_text_color">#5D657B</color>
+    <color name="tab_row_border_color">#9E9E9E</color>
+
+    <!-- <color name="toast_text_color">#4BB2E7</color> -->
+    <color name="toast_text_color">#FFFFFF</color>
+
+    <!-- acitonbar -->
+    <color name="acitonbar_custome_view_bg">#601C3C55</color>
+    <color name="actionbar_buttom_green">#8DCA35</color>
+    <color name="actionbar_right_gray">#323542</color>
+    <color name="actionbar_scan_edit_bg">#BDC3C7</color>
+    <color name="actionbar_sacn_font">#54667A</color>
+
+    <!-- body_title_head_one -->
+    <!-- 标题栏背景色 -->
+    <color name="body_title_head_one">#FFFFFF</color>
+
+    <!-- 标题栏标题字体色 -->
+    <color name="body_title_head_one_font">#FFFFFF</color>
+
+    <!-- 主菜单 item文字颜色 -->
+    <color name="main_menu_text_color">#747E87</color>
+
+    <!-- 主菜单页面 pop按钮颜色 -->
+    <color name="main_pop_button_selected">#069CD1</color>
+    <color name="main_pop_button_unselected">#00000000</color>
+    
+    <!-- 版本升级主背景色 -->
+    <color name="app_update_bg_main">#FFFFFF</color>
+    
+    <!-- 版本升级标题区域字体颜色色 -->
+    <color name="app_update_title_text">#333333</color>
+    
+    <!-- 版本升级内容区域字体颜色色 -->
+    <color name="app_update_content_text">#777777</color>
+    
+    <!-- 版本升级操作菜单区域背景色 -->
+    <color name="app_update_foot_menu_bg_main">#e7e7e7</color>
+    
+     <!-- 版本升级操作菜单区域分割线色 -->
+    <color name="app_update_foot_split_line">#b8b8b8</color>
+    
+    <!-- 版本升级操作菜单区域菜单-升级文本颜色 -->
+    <color name="app_update_foot_menu_confirm_text_color">#00c37c</color>
+    <!-- 版本升级操作菜单区域菜单-取消升级文本颜色 -->
+    <color name="app_update_foot_menu_cancel_text_color">#333333</color>
+    <!-- 版本升级操作菜单区域菜单-取消升级|取消升级点击之后的文本颜色 -->
+    <color name="app_update_foot_menu_active_text_color">#FFFFFF</color>
+
+</resources>

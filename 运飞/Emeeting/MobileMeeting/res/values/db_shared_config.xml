@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 注意 ：更新版本号，会导致所有数据库表重建   除非特殊情况请勿更新版本号 -->
+    <integer name="database_shared_db_version">2</integer>
+
+    <!-- 公共数据库文件名后缀(使用后缀方式和用户db区分开) -->
+    <string name="database_shared_db_name_suffix">_common.db</string>
+
+    <!-- 公共表定义 -->
+    <string-array name="database_shared_tables">
+
+        <!-- 添加实体item，在不改变database_shared_db_version版本号的情况下，会保留现有数据库表及数据，自动创建新表 -->
+        <item>cn.com.zte.mobilebasedata.system.entity.SysLastUpdatetimeInfo</item>
+        <item>cn.com.zte.emeeting.app.database.entity.shared.DBMeetingRoomAddress</item>
+        <item>cn.com.zte.emeeting.app.database.entity.shared.DBMeetingRoomInfo</item>
+       
+    </string-array>
+
+</resources>

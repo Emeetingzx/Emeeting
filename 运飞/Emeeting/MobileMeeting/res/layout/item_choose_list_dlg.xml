@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:id="@+id/rl_bg_item_chooselist_dlg"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        >
+	    <TextView 
+	        android:layout_height="48dp"
+	        android:layout_width="fill_parent"
+	        android:id="@+id/tv_item_chooselist_dlg"
+	        android:text="@string/dlg_place_else_tmp"
+	        android:textSize="16sp"
+	        android:gravity="center"
+	        android:textColor="@drawable/textcolor_item_filter_left"
+	        />
+    </RelativeLayout>
+</FrameLayout>

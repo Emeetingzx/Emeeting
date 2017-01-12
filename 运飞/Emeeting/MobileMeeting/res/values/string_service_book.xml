@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="service_time_error">时间选择有误</string>
+    <string name="service_time_empty">时间选择不能为空</string>
+    <string name="service_address_empty">会议详细地点不能为空</string>
+    <string name="service_place_empty">会议地区不能为空</string>
+    <string name="service_phone_length_error">手机号长度必须11位</string>
+    <string name="service_phone_error">请输入正确的手机号码</string>
+    <string name="service_service_empty">请选择服务项</string>
+    <string name="service_addValue_service">增值服务</string>
+    <string name="service_order_empty">很抱歉，没有新服务订单</string>
+    <string name="service_time_before">开始时间必须晚于当前时间</string>
+    
+    
+</resources>

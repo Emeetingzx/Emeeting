@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_servicemyself_dev"
+    android:orientation="vertical" >
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:id="@+id/item_service_im"
+                android:layout_width="14dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/icon_item_order" />
+
+            <TextView
+                android:id="@+id/item_service_number"
+                style="@style/TextSizeStyle_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/item_service_im"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="VIP20150911-01"
+                android:textColor="@color/PVFContentChooseTextColor" />
+
+            <TextView
+                android:id="@+id/item_service_state"
+                style="@style/TextSizeStyle_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/item_service_number"
+                android:text="已受理"
+                android:textColor="@color/orange" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/icon_service_address" />
+
+            <TextView
+                android:id="@+id/item_service_address"
+                style="@style/TextSizeStyle_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="深圳 科技园 研发楼 16-02"
+                android:textColor="@color/SFContentTextColor" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:src="@drawable/icon_item_time" />
+
+            <TextView
+                android:id="@+id/item_service_time"
+                style="@style/TextSizeStyle_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="2015-09-11 10:00"
+                android:textColor="@color/SFContentTextColor" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/item_service_foodlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/item_service_operationlayout"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/icon_item_tea" />
+
+                <TextView
+                    android:id="@+id/item_service_food"
+                    style="@style/TextSizeStyle_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="茶水 点心 小吃 水果"
+                    android:textColor="@color/SFContentTextColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_service_personlayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_service_foodlayout"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/item_service_operationlayout"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/icon_item_person" />
+
+                <TextView
+                    android:id="@+id/item_service_person"
+                    style="@style/TextSizeStyle_12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="万成玲 00157896"
+                    android:textColor="@color/SFContentTextColor" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/item_service_operationlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal" >
+
+                <!-- android:background="@drawable/bgselector_btn_ok" -->
+
+                <Button
+                    android:id="@+id/item_service_operation1"
+                    style="@style/TextSizeStyle_12"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:background="@drawable/bgshape_btn_cancel_book"
+                    android:text="@string/service_operation_unsubscribe"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/item_service_operation2"
+                    style="@style/TextSizeStyle_12"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/white"
+                    android:text="@string/service_operation_undoen"
+                    android:textColor="@color/OrangebgColor"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    
+
+</LinearLayout>

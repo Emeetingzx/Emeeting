@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="gesture_background">#ff303237</color>
+    <color name="color_hei_8">#00000000</color>
+    <color name="textcolor">#1B89F9</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#1388FF</color>
+    <color name="bg_e9">#E9E9E9</color>
+    <color name="red">#ff3232</color>
+    <color name="bg_f4">#f4f4f4</color>
+    <color name="SFMessageTextColor">#646464</color>
+
+    <drawable name="trans">@color/color_hei_8</drawable>
+
+    <color name="SFLineBgColor">#EEEEEE</color>
+    <color name="SFUpdateVersionDialogLeftTextColor">#9D9D9D</color>
+    <color name="SFUpdateVersionDialogRightTextColor">#1A8DFA</color>
+
+</resources>

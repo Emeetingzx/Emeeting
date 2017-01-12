@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map linked="true" >
+
+  <!-- ####################   加密解密配置       #################### -->
+  <!-- 根据通讯的URL自上而下寻找模糊匹配的key（IP:端口/path）, 越靠前优先级越高   出现一个匹配则终止查找  -->
+  
+  <!--
+       Key:  目标服务器URL   IP:端口/path
+       Value:  @string/通道key
+  -->
+  
+  <!--   <entry key="10.88.145.65:80/emm" > -->
+  <entry key="mdmtest.zte.com.cn:8888/emeeting" >@string/dbfa6a423a4f8be59cd3ffd979154f18</entry>
+  
+  <entry key="mdm.zte.com.cn:80/emeeting" >@string/dbfa6a423a4f8be59cd3ffd979154f18</entry>
+  
+
+</map>

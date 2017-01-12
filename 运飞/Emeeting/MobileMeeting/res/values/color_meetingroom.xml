@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <color name="textcolor_filter_blue">#01aeff</color>
+        <color name="textcolor_gray_3">#333333</color>
+        <color name="textcolor_tv_empty">#999999</color>
+        <color name="textcolor_gray_c">#cccccc</color>
+        <color name="textcolor_gray_9">#999999</color>
+        <color name="textcolor_gray_6">#666666</color>
+        <color name="textcolor_filter_red">#ff3232</color>
+        <color name="bgcolor_gray_c">#cccccc</color>
+        
+        <color name="bgcolor_filter_blue">#01aeff</color>
+        <color name="bgcolor_filter_gray_f9">#f9f9f9</color>
+        <color name="bgcolor_filter_divider">#cccccc</color>
+        <color name="bgcolor_filter_left">#dddddd</color>
+        <color name="bgcolor_filter_divider_d">#dddddd</color>
+        <color name="bgcolor_filter_divider_f9">#f9f9f9</color>
+        
+        <color name="bgcolor_divider_lv">#f9f9f9</color>
+        
+        <color name="bgcolor_filter_center">#f4f4f4</color>
+        <color name="bgcolor_filter_f4">#f4f4f4</color>
+        <color name="bgcolor_filter_yellow">#ff9600</color>
+
+        <color name="bgcolor_dlg_outside">#80000000</color>
+        <color name="bgcolor_dlg_meetingbook_top">#f8f8f8</color>
+        <color name="bgcolor_meetingdetail_top">#f4f4f4</color>
+        
+        
+        <color name="color_a5">#a5a5a5</color>
+</resources>

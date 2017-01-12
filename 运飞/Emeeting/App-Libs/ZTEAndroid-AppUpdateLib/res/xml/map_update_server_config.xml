@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map linked="true" >
+    <!-- ####################   APK版本更新服务器配置       ####################  -->
+    <!-- APK版本更新服务器是否采用Https协议 false | true  -->
+    <entry key="update_server_server_https_flag" >false</entry>
+    <!-- APK版本更新服务器外网IP  -->
+    <entry key="update_server_server_ip_outer" >113.98.59.175</entry>
+    <!-- APK版本更新服务器内网IP  -->
+    <entry key="update_server_server_ip_inner" >10.89.208.188</entry>
+    <!-- APK版本更新服务器外网端口  -->
+    <entry key="update_server_server_port_outer" >8080</entry>
+    <!-- APK版本更新服务器内网端口  -->
+    <entry key="update_server_server_port_inner" >80</entry>
+    
+</map>

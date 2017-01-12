@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LeftMenuCell" id="KGk-i7-Jjw" customClass="LeftMenuCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="conference_booking_btn.png" translatesAutoresizingMaskIntoConstraints="NO" id="ybg-2n-udL">
+                        <rect key="frame" x="27" y="7" width="32" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="81A-Ux-e1M"/>
+                            <constraint firstAttribute="height" constant="32" id="BGU-lD-Iid"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会议议定" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7e-jo-DVd">
+                        <rect key="frame" x="90" y="7" width="230" height="32"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="32" id="8dX-Os-4Qo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ybg-2n-udL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="IaP-Ld-6CN"/>
+                    <constraint firstItem="k7e-jo-DVd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="90" id="JpZ-t6-uhf"/>
+                    <constraint firstAttribute="trailing" secondItem="k7e-jo-DVd" secondAttribute="trailing" id="JxA-BF-Lcz"/>
+                    <constraint firstItem="k7e-jo-DVd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="T0I-62-U4Z"/>
+                    <constraint firstItem="ybg-2n-udL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="27" id="seb-cS-fJ6"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="imageV" destination="ybg-2n-udL" id="UyA-qd-MP6"/>
+                <outlet property="textName" destination="k7e-jo-DVd" id="Mhk-gh-Pj0"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="conference_booking_btn.png" width="48" height="48"/>
+    </resources>
+</document>

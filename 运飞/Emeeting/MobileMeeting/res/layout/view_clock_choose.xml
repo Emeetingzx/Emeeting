@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="284dp"
+        android:layout_height="301dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_clock_choose" >
+
+        <LinearLayout
+            android:id="@+id/left"
+            android:layout_width="@dimen/clock_width"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="55dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/btn25"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn24"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_marginTop="@dimen/clock_item_margin"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn23"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn22"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_marginTop="@dimen/clock_item_margin"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn21"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn20"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_marginTop="@dimen/clock_item_margin"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn19"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn18"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_marginTop="@dimen/clock_item_margin"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/clock_height"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btn26"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/btn1"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/right"
+            android:layout_width="@dimen/clock_width"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="55dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="55dp"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/btn2"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn3"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_marginTop="@dimen/clock_item_margin"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn4"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn5"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_marginTop="@dimen/clock_item_margin"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn6"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn7"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_marginTop="@dimen/clock_item_margin"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn8"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                 android:id="@+id/btn9"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_marginTop="@dimen/clock_item_margin"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/clock_height"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/btn17"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn16"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_marginLeft="@dimen/clock_item_margin"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn15"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn14"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_marginLeft="@dimen/clock_item_margin"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn13"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn12"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_marginLeft="@dimen/clock_item_margin"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn11"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+
+            <ImageView
+                android:id="@+id/btn10"
+                android:layout_width="@dimen/clock_width"
+                android:layout_height="@dimen/clock_height"
+                android:layout_marginLeft="@dimen/clock_item_margin"
+                android:layout_weight="1"
+                android:scaleType="centerInside"
+                android:src="@drawable/icon_clock_enable" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerInParent="true" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/current_date_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="8月20日"
+                    android:textColor="#666666"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/current_selected_time_period_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/clock_item_margin"
+                    android:gravity="center_horizontal"
+                    android:textColor="#ff9600"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:text="@string/clock_time_hint"
+            android:textColor="@color/white"
+            style="@style/TextSizeStyle_14" >
+        </TextView>
+    </RelativeLayout>
+
+</RelativeLayout>

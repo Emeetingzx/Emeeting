@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="ReserveViewCellCollectionViewCell" id="gTV-IL-0wX" customClass="ReserveViewCellCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="100"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="purified_water.png" translatesAutoresizingMaskIntoConstraints="NO" id="rsc-15-ist">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    </imageView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selected.png" translatesAutoresizingMaskIntoConstraints="NO" id="N0D-3c-DiS">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="纯净水" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YlK-1M-HH8">
+                        <rect key="frame" x="0.0" y="80" width="80" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="N0D-3c-DiS" secondAttribute="bottom" id="FAI-hu-mpl"/>
+                <constraint firstAttribute="trailing" secondItem="rsc-15-ist" secondAttribute="trailing" id="NnE-GD-CL5"/>
+                <constraint firstAttribute="trailing" secondItem="N0D-3c-DiS" secondAttribute="trailing" id="UZm-X3-loJ"/>
+                <constraint firstItem="YlK-1M-HH8" firstAttribute="top" secondItem="N0D-3c-DiS" secondAttribute="bottom" id="WzW-CV-I4h"/>
+                <constraint firstAttribute="bottom" secondItem="N0D-3c-DiS" secondAttribute="bottom" constant="20" id="XHp-fp-NLO"/>
+                <constraint firstItem="rsc-15-ist" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ybe-ow-vrL"/>
+                <constraint firstAttribute="bottom" secondItem="YlK-1M-HH8" secondAttribute="bottom" id="Zpf-hq-Apc"/>
+                <constraint firstAttribute="trailing" secondItem="YlK-1M-HH8" secondAttribute="trailing" id="cXT-Yb-j9O"/>
+                <constraint firstItem="N0D-3c-DiS" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dHQ-DA-8Mz"/>
+                <constraint firstItem="YlK-1M-HH8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iMf-is-yxv"/>
+                <constraint firstAttribute="bottom" secondItem="rsc-15-ist" secondAttribute="bottom" id="pR8-tY-tQi"/>
+                <constraint firstItem="rsc-15-ist" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="upW-64-psE"/>
+                <constraint firstAttribute="bottom" secondItem="rsc-15-ist" secondAttribute="bottom" constant="20" id="vtR-0R-XKs"/>
+                <constraint firstItem="N0D-3c-DiS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="z91-0W-lap"/>
+            </constraints>
+            <size key="customSize" width="83" height="97"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="FAI-hu-mpl"/>
+                    <exclude reference="pR8-tY-tQi"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="AddValueServiceImage" destination="rsc-15-ist" id="d7K-jF-bAP"/>
+                <outlet property="addValueNameLabel" destination="YlK-1M-HH8" id="AZ0-Yw-fIG"/>
+                <outlet property="selectedImage" destination="N0D-3c-DiS" id="VbG-r2-DHv"/>
+            </connections>
+            <point key="canvasLocation" x="321" y="298"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="purified_water.png" width="120" height="120"/>
+        <image name="selected.png" width="120" height="120"/>
+    </resources>
+</document>

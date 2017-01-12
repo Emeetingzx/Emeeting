@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">ZTEAndroid-AppUpdateLib</string>
+    
+    <!-- 版本信息检测 -->
+    <string name="client_version_new_version_title_text">版本升级</string>
+    <string name="client_version_new_version_number_head_text">版本号:</string>
+    <string name="client_version_new_version_content_head_text">版本特性:</string>
+    <string name="client_version_do_update_text">立刻升级</string>
+    <string name="client_version_cencel_update_text">下次再说</string>
+
+</resources>

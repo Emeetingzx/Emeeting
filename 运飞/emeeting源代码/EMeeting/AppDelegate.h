@@ -1,0 +1,30 @@
+//
+//  AppDelegate.h
+//  RedPacket
+//
+//  Created by itp on 15/10/21.
+//  Copyright © 2015年 itp. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <objc/runtime.h>
+#import <AudioToolbox/AudioToolbox.h>
+#import "MMDrawerController.h"
+
+//#define EMMAppID @"A00258"  //测试
+#define EMMAppID @"A00218"  //生产
+
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
+
+@property (nonatomic,strong,readonly)MMDrawerController *drawerController;
+
+@property (nonatomic,copy) NSString *tokenType;
+
+@property (nonatomic,assign) BOOL isFirstLaunching;
+
+@property (nonatomic,assign) BOOL isDoneUpdate;
+-(void)jj;
+@end
+

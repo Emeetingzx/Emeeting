@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+	<RelativeLayout
+              android:layout_height="48dp"
+              android:layout_width="fill_parent"
+              >
+         <TextView
+            android:maxLines="2"
+            android:layout_toLeftOf="@+id/btn_meetingdetail_cancelbook"
+          	android:textColor="@color/textcolor_filter_blue"
+          	android:layout_height="fill_parent"
+          	android:layout_width="wrap_content"
+          	android:gravity="center_vertical"
+          	android:textSize="14sp"
+           android:text="@string/md_meeting_place_tmp"
+            />
+
+        <Button
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+        android:id="@+id/btn_meetingdetail_cancelbook"
+        android:layout_alignParentRight="true"
+        android:layout_height="20dp"
+        android:layout_width="40dp"
+        android:text="@string/meeting_cancel_book"
+        android:textSize="12sp"
+        android:textColor="#ffffff"
+        android:background="@drawable/bgshape_btn_cancel_book"
+        android:gravity="center"
+        />
+          </RelativeLayout>
+</FrameLayout>

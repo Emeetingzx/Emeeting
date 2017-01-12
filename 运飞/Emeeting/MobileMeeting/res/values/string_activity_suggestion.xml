@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <string name="tv_your_suggertion">您的意见或建议</string> 
+   <string name="tv_contact_way">您的联系方式</string> 
+   <string name="tv_sure">确定</string> 
+   <string name="tv_suress">提交</string> 
+   
+    <string name="tv_suggesion_no">意见不能为空</string> 
+    <string name="tv_suggesion_phone_number">请输入正确的手机号码</string> 
+</resources>

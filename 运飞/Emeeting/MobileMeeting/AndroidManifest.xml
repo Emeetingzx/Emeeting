@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="cn.com.zte.mobileemeeting"
+    android:versionCode="14"
+    android:versionName="1.1.3" >
+
+    <!--
+    测试版
+    android:versionCode="70"
+    android:versionName="1.6.9"-->
+    <!--
+   正式版
+    android:versionCode="11"
+    android:versionName="1.1.0"
+    -->
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <!-- 连接网络权限 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 在sdcard中创建/删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 手机震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 推送功能权限 [重复的已经删除] -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 拨打电话权限 -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <application
+        android:name="cn.com.zte.emeeting.app.base.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ico_logo"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppThemeWindowNoTitle"
+        tools:replace="android:icon,android:theme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="hCRl6HwUFGbUODBnwWNCuCknA0Ke2Qd0" />
+        <!-- android:value="5HAZ8qUaGSw31Att27lpjmBc" /> -->
+
+
+        <!-- 欢迎界面Activity -->
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.WelComeActivity"
+            android:configChanges="keyboardHidden|keyboard"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWindowNoBackground"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 主界面Activity -->
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWindowNoTitleLight" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.MeetingDetailMessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.MessageSetActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.SuggestionFeedbackActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.MeetingDetailedActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.ServiceAdminActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.views.calendar.CalendarActivity2"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.views.calendar.CalendarActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.MeetingRoomQueryResultActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.MeetingRoomTimeChooseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.ChooseContactsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.PhoneDetailMessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.DetailedInformationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.FindMeetingRoomActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWindowNoTitle1" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.MeetingMessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.ShakeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeWindowNoTitleLight" >
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.JoinMeetingPersonActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.AboutActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.MeetingDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.LocationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.HelpMeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.HelpMeDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.MeetingBookChooseOtherActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.AllMeetingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.MeetingControlActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 获取手机联系人界面 -->
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.control.ContactListActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.CheckInActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.PushMessageActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 会议控制-选择类型界面 -->
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.control.ControlFilterActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 电话视频输入选择页面 -->
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.control.NumberAddActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 固话添加页面 -->
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.control.TelPhoneActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 签到结果界面 -->
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.ScanSuccessActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 会议未开始界面 -->
+        <activity
+            android:name="cn.com.zte.emeeting.app.activity.NotStartedMeetingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <!-- EMM配置: 消息推送连接处理接收器  -建链APP配置 -->
+        <receiver
+            android:name="cn.com.zte.android.pushclient.receiver.PushConnetReceiver"
+            android:exported="true" >
+
+            <!-- 系统Action -->
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+
+            <!-- 自定义Action -->
+            <intent-filter>
+                <action android:name="cn.com.zte.emm.push.receiver.action.START" />
+                <action android:name="cn.com.zte.emm.push.receiver.action.STOP" />
+                <action android:name="cn.com.zte.emm.push.receiver.action.RESTART" />
+                <!-- TODO cat -->
+            </intent-filter>
+
+            <!-- 应用卸载Action -->
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+
+        <!-- EMM配置: 消息推送服务 -->
+        <service
+            android:name="cn.com.zte.android.pushclient.service.PushService"
+            android:enabled="true"
+            android:exported="true"
+            android:process="cn.com.zte.emp.push.v1" >
+            <intent-filter>
+                <action android:name="cn.com.zte.emm.push.service.action.PUSH_SERVICE" />
+
+                <!--
+			                  消息推送环境 
+			                  正式环境：env.pro
+			                  仿真环境：env.ppt
+			                  测试环境：env.test
+                -->
+                <category android:name="env.pro" />
+            </intent-filter>
+        </service>
+
+        <!-- EMM配置: APP自定义的接受消息的接收器 -->
+        <receiver
+            android:name="cn.com.zte.emeeting.app.receiver.MOAPushMessageReceiver"
+            android:exported="true" >
+
+            <!-- 自定义Action -->
+            <intent-filter>
+
+                <!-- 接收 push 消息Action -->
+                <action android:name="cn.com.zte.emm.push.service.action.MESSAGE" />
+
+                <!--
+			                   消息推送环境 
+			                   正式环境：env.pro
+			                   仿真环境：env.ppt
+			                   测试环境：env.test
+                -->
+                <category android:name="env.pro" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

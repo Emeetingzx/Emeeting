@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_search_contacts_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/public_background_image" >
+
+    <cn.com.zte.zmail.app.views.ykviews.RoundImageViewZMail
+        android:id="@+id/search_contacts_list_item_head_image"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp" >
+    </cn.com.zte.zmail.app.views.ykviews.RoundImageViewZMail>
+
+    <RelativeLayout
+        android:id="@+id/search_contacts_list_item_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:gravity="center_vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/search_contacts_list_item_zmail_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="@color/TBTitleColor"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/search_contacts_list_item_notes_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/search_contacts_list_item_zmail_btn"
+            android:textColor="@color/TBTitleColor"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/search_contacts_list_item_all_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/search_contacts_list_item_notes_btn"
+            android:textColor="@color/TBTitleColor"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/search_contacts_list_item_btns"
+        android:layout_toRightOf="@id/search_contacts_list_item_head_image"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/search_contacts_list_item_name_and_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="111"
+            android:textColor="#181818"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/search_contacts_list_item_partment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/search_contacts_list_item_name_and_id"
+            android:layout_marginTop="5dp"
+            android:singleLine="true"
+            android:text="222"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/search_contacts_list_item_line"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/search_contacts_list_item_head_image"
+        android:background="@color/bgcolor_gray_c" />
+
+</RelativeLayout>

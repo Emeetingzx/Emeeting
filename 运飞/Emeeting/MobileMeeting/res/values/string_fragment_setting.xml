@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="tv_suggestion">意见反馈</string>
+    <string name="tv_guide">使用指南</string>
+    <string name="tv_about">关于</string>
+    <string name="tv_app_version">检测新版本</string>
+    <string name="tv_push_login">退出当前账号</string>
+    <string name="tv_message_detail">详细信息</string>
+    <string name="tv_message_set">设置</string>
+    <string name="tv_message_no_net">当前网络不可用</string>
+    <string name="tv_message_now_version">当前为最新版本</string>
+    <string name="tv_message_net_error">网络异常，请检查你的网络。</string>
+    <string name="tv_message_sugges_succes">反馈成功</string>
+
+</resources>

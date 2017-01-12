@@ -1,0 +1,275 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BG_ALL" >
+
+    <cn.com.zte.emeeting.app.views.TopBar
+        android:id="@+id/topbar_choose_contacts"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#D7D7D7" />
+
+    <RelativeLayout
+        android:id="@+id/choose_contacts_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/topbar_choose_contacts"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/choose_contacts_search_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/search_contacts_searchview"
+                    android:layout_width="20dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp" />
+
+                <RelativeLayout
+                    android:id="@+id/search_contacts_cancle_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:padding="10dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/search_contacts_cancle"
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/search_contacts_edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toLeftOf="@id/search_contacts_cancle_layout"
+                    android:layout_toRightOf="@+id/search_contacts_searchview"
+                    android:background="@null"
+                    android:imeOptions="actionSearch"
+                    android:textColor="#666666"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/search_contacts_search_cancle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/TBTitleColor"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/choose_contacts_buttons"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_below="@id/choose_contacts_search_layout"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:id="@+id/buttons_choose_contacts"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/receivers_choose_contacts"
+                    style="@style/TextSizeStyle_14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="收件人（0）"
+                    android:textColor="#aaaaaa" />
+
+                <View
+                    android:id="@+id/buttons_choose_contacts_line1"
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#aaaaaa" />
+
+                <Button
+                    android:id="@+id/copy_choose_contacts"
+                    style="@style/TextSizeStyle_14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="抄送（10）"
+                    android:textColor="#aaaaaa" />
+
+                <View
+                    android:id="@+id/buttons_choose_contacts_line2"
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:background="#aaaaaa" />
+
+                <Button
+                    android:id="@+id/carbon_copy_choose_contacts"
+                    style="@style/TextSizeStyle_14"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="密送（100）"
+                    android:textColor="#aaaaaa" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/buddy_show_layout_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/choose_contacts_buttons"
+            android:layout_marginBottom="30dp" >
+
+            <!-- <cn.com.zte.zmail.app.views.ykviews.ChooseBuddyNewLineView -->
+            <!-- android:id="@+id/buddy_show_layout" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:paddingBottom="16dp" -->
+            <!-- android:visibility="gone" > -->
+            <!-- </cn.com.zte.zmail.app.views.ykviews.ChooseBuddyNewLineView> -->
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/general_contacts_bottom_linearlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="290dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/choose_contacts_buttons"
+            android:gravity="bottom"
+            android:orientation="vertical" >
+
+            <SlidingDrawer
+                android:id="@+id/general_contacts_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="290dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/choose_contacts_buttons"
+                android:content="@+id/content"
+                android:handle="@+id/general_contacts_handle"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/general_contacts_handle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/general_contacts_bottom_close"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:background="#e9e9e9"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="5dp"
+                                android:layout_centerInParent="true"
+                                android:scaleType="centerInside" >
+                            </ImageView>
+                        </RelativeLayout>
+
+                        <TextView
+                            style="@style/TextSizeStyle_14"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="常用联系人"
+                            android:textColor="#333333" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/general_contacts_bottom_open"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:background="#e9e9e9"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:visibility="visible" >
+
+                        <TextView
+                            style="@style/TextSizeStyle_14"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="常用联系人"
+                            android:textColor="#333333" />
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content" >
+
+                            <ImageView
+                                android:layout_width="12dp"
+                                android:layout_height="5dp"
+                                android:layout_centerHorizontal="true"
+                                android:scaleType="centerInside" >
+                            </ImageView>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@id/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/BG_ALL" >
+
+                        <!-- <cn.com.zte.zmail.app.views.ykviews.ChooseBuddyNewLineView -->
+                        <!-- android:id="@+id/general_contacts_layout" -->
+                        <!-- android:layout_width="fill_parent" -->
+                        <!-- android:layout_height="wrap_content" > -->
+                        <!-- </cn.com.zte.zmail.app.views.ykviews.ChooseBuddyNewLineView> -->
+                    </ScrollView>
+                </LinearLayout>
+            </SlidingDrawer>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

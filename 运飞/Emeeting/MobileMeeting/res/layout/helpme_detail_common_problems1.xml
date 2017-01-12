@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="15dp"
+     >
+
+    <TextView
+        android:id="@+id/common_problems1_title_text" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextSizeStyle_20"
+        android:text="@string/common_problems1_title_str"
+        android:paddingBottom="5dp"
+        />
+    
+    <cn.com.zte.emeeting.app.views.DashedLineView 
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        />
+    
+    <LinearLayout
+        android:id="@+id/common_problems1_terms_layout" 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        
+        <TextView 
+            android:id="@+id/common_problems1_terms_1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextSizeStyle_16"
+            android:text="@string/common_problems1_terms_1_str"
+            android:textColor="@color/HelpDetailTermsTextColor"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+        
+        <TextView 
+            android:id="@+id/common_problems1_terms_2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextSizeStyle_16"
+            android:text="@string/common_problems1_terms_2_str"
+            android:textColor="@color/HelpDetailTermsTextColor"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+        
+        <TextView 
+            android:id="@+id/common_problems1_terms_3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextSizeStyle_16"
+            android:text="@string/common_problems1_terms_3_str"
+            android:textColor="@color/HelpDetailTermsTextColor"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+        
+        <TextView 
+            android:id="@+id/common_problems1_terms_4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextSizeStyle_16"
+            android:text="@string/common_problems1_terms_4_str"
+            android:textColor="@color/HelpDetailTermsTextColor"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+        <TextView 
+            android:id="@+id/common_problems1_terms_"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            style="@style/TextSizeStyle_16"
+            android:text="@string/common_problems1_terms_5_str"
+            android:textColor="@color/HelpDetailTermsTextColor"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            />
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="ContactsListTableViewCell" selectionStyle="default" indentationWidth="10" rowHeight="61" id="KGk-i7-Jjw" customClass="ContactsListTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YJ9-6O-XGN">
+                        <rect key="frame" x="20" y="5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="mdI-5H-DBj"/>
+                            <constraint firstAttribute="width" constant="50" id="qbu-ec-o0O"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ekj-H1-PRf">
+                        <rect key="frame" x="80" y="10" width="40" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPs-sF-9QF">
+                        <rect key="frame" x="80" y="35" width="31" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.47843137254901957" green="0.47843137254901957" blue="0.47843137254901957" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWF-yO-tAu">
+                        <rect key="frame" x="249" y="18" width="51" height="24"/>
+                        <color key="backgroundColor" red="1" green="0.58823529409999997" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="cPS-RR-nTN"/>
+                            <constraint firstAttribute="width" constant="51" id="dSz-57-Aj8"/>
+                        </constraints>
+                        <state key="normal" title="邀请">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="SWF-yO-tAu" secondAttribute="trailing" constant="20" id="5V6-dr-IOI"/>
+                    <constraint firstItem="YJ9-6O-XGN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="IJ9-FZ-iUb"/>
+                    <constraint firstItem="mPs-sF-9QF" firstAttribute="leading" secondItem="YJ9-6O-XGN" secondAttribute="trailing" constant="10" id="Sdt-6F-LTW"/>
+                    <constraint firstItem="mPs-sF-9QF" firstAttribute="top" secondItem="ekj-H1-PRf" secondAttribute="bottom" constant="5" id="TEQ-3N-rng"/>
+                    <constraint firstItem="SWF-yO-tAu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ta2-t4-ceL"/>
+                    <constraint firstItem="ekj-H1-PRf" firstAttribute="leading" secondItem="YJ9-6O-XGN" secondAttribute="trailing" constant="10" id="XQ9-PY-6HS"/>
+                    <constraint firstItem="ekj-H1-PRf" firstAttribute="top" secondItem="YJ9-6O-XGN" secondAttribute="top" constant="5" id="qhh-wz-2aq"/>
+                    <constraint firstItem="YJ9-6O-XGN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="wRm-WG-O3y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headImage" destination="YJ9-6O-XGN" id="3m5-5o-dWh"/>
+                <outlet property="invitationBtn" destination="SWF-yO-tAu" id="jbG-46-c11"/>
+                <outlet property="name" destination="ekj-H1-PRf" id="f6n-ZM-r1B"/>
+                <outlet property="phoneNum" destination="mPs-sF-9QF" id="e87-OU-Yoo"/>
+            </connections>
+            <point key="canvasLocation" x="401" y="310.5"/>
+        </tableViewCell>
+    </objects>
+</document>

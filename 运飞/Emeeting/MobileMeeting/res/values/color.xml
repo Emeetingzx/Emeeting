@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 加入会场页面 -->
+    <color name="ControlBgColor">#F4F4F4</color>
+    <color name="ControlLineColor">#F0F0F0</color>
+    <color name="ControlTvTitleColor">#919191</color>
+    <color name="ControlTvConColor">#A5A5A5</color>
+    <color name="ControlListViewDivider">#DBDBDB</color>
+</resources>

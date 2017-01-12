@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff8d2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="30dp" >
+
+        <RelativeLayout
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/view_pupo_prompt_text_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="温馨提示:您"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/view_pupo_prompt_text_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/view_pupo_prompt_text_hint"
+                android:text=""
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/view_pupo_prompt_text_hint1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/view_pupo_prompt_text_month"
+                android:text="共有"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/view_pupo_prompt_text_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/view_pupo_prompt_text_hint1"
+                android:text="5"
+                android:textColor="#ff3232"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/view_pupo_prompt_text_meet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/view_pupo_prompt_text_number"
+                android:text="次会议"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        
+        <ImageView 
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:id="@+id/view_pupo_prompt_image_close"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_close"
+            />
+        
+    </RelativeLayout>
+
+</LinearLayout>
